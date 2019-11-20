@@ -1,0 +1,165 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img { max-width: 100%; }
+
+[class*="grid"],[class*="col"],[class~="grid"],[class~="col"] {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Default styles */
+
+body {
+  font-family: 'Noto Serif', serif;
+  background-color: #2F2F2F;
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 { font-weight: normal; }
+
+h1, h2, h4 { font-family: 'DM Serif Display', serif; }
+
+h1 { font-size: 2.5rem; }
+
+h2 { font-size: 4rem; }
+
+h3 {
+  font-size: .73rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h3, span { color: #F7BE00; }
+
+p {
+  font-size: .9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+h3, nav a, .button {
+  font-family: "Frontage-Regular";
+}
+
+.nav-bar { margin-bottom: 2rem; }
+
+nav a {
+  padding: .2rem .5rem;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: #F7BE00;
+  transition: .3s ease;
+}
+
+nav a:hover {
+  color: inherit;
+  transition: .3s ease;
+}
+
+input, .form-button {
+  padding: 1rem;
+  border: none;
+  font-family: "Frontage-Regular", serif;
+  font-size: .7rem;
+}
+
+input {
+  width: 250px;
+}
+
+ul li {
+  list-style: none;
+}
+
+::placeholder {
+  margin: 1.5rem;
+  color: #F7BE00;
+  opacity: .8;
+}
+
+.form-button {
+  width: 250px;
+  display: inline-block;
+  background-color: #F7BE00;
+}
+
+.fab {
+  font-size: 3rem;
+  opacity: .7;
+  padding: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@font-face {
+  font-family: "Frontage-Regular";
+  font-style: normal;
+  src: url("/styles/fonts/Frontage-Regular.otf") format("otf");
+}
+
+footer {
+  border-bottom: 5px solid #F7BE00;
+}
+
+/* Utility classes */
+
+.center       { text-align: center;  }
+.right        { text-align: right;   }
+.left         { text-align: left;    }
+
+.full-height  {  min-height: 100vh;  }
+.half-height  {  min-height: 50vh;   }
+.third-height {  min-height: 33vh;   }
+
+.padded-sm    {  padding: 3% 5%;     }
+.padded-lg    {  padding: 3% 8%;     }
+
+.banner {
+  min-height: 90vh;
+  border-bottom: 5px solid #F7BE00;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #F7BE00;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  color: #F7BE00;
+  transition: .3s ease;
+}
+
+.button:hover {
+  background-color: #e5e5e5;
+  transition: .3s ease;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+}
+
+.mobile-nav {
+  top: 2%;
+  right: 5%;
+}
+
+
+/* Media Queries for screen sizes */
