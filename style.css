@@ -51,9 +51,9 @@ p {
   margin-bottom: 1.5rem;
 }
 
-h3, nav a, li, .button {
-  font-family: "Frontage-Regular";
-}
+
+
+h3, nav a, li, .button { font-family: "Frontage-Regular"; }
 
 [class=grid].nav-bar {
   max-height: 15vh;
@@ -221,7 +221,9 @@ footer { border-bottom: 5px solid #F7BE00; }
 
   .desktop-nav { display: inline-block; }
 
-  .exerpt { padding-left: 40%; }
+  .exerpt-right { padding-left: 40%; }
+
+  .exerpt-left { padding-right: 40%; }
 
 }
 
