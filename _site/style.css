@@ -51,8 +51,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-
-
 h3, nav a, li, .button { font-family: "Frontage-Regular"; }
 
 [class=grid].nav-bar {
@@ -127,12 +125,23 @@ footer { border-bottom: 5px solid #F7BE00; }
 .right        { text-align: right;   }
 .left         { text-align: left;    }
 
-.full-height  {  min-height: 100vh;  }
-.half-height  {  min-height: 50vh;   }
-.third-height {  min-height: 33vh;   }
+.full-height   {  min-height: 100vh;  }
+.half-height   {  min-height: 50vh;   }
+.third-height  {  min-height: 33vh;   }
+.double-height {  min-height: 200vh:  }
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
+
+.bg-dark {
+  background-color: #707070;
+  color: #e5e5e5;
+}
+
+.bg-light {
+  background-color: #e5e5e5;
+  color: #707070;
+}
 
 .banner {
   min-height: 90vh;
@@ -174,7 +183,9 @@ footer { border-bottom: 5px solid #F7BE00; }
   right: 5%;
 }
 
-
+.caption-large p {
+  text-transform: italic;
+}
 
 /* Media Queries for screen sizes */
 

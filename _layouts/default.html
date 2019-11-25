@@ -56,7 +56,7 @@
           <div class="col-8_sm-6_md-8-middle desktop-nav right">
             <nav>
               <a href="#"> About </a>
-              <a href="#"> Stories </a>
+              <a href="/stories"> Stories </a>
               <a href="#"> Shop </a>
               <a href="#"> Contact </a>
             </nav>
@@ -68,12 +68,12 @@
               <span> 0{{page.article_number}}. </span>
             </h2>
             <h2>
-              {{page.article_title}}
+              {{ page.article_title }}
             </h2>
           </div>
           <div class="col-12 right">
             <p class="exerpt-right">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              {{ page.exerpt }}
             </p>
             <a href="#" class="button"> Read </a>
           </div>
