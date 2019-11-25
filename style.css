@@ -221,6 +221,8 @@ footer { border-bottom: 5px solid #F7BE00; }
 
   .desktop-nav { display: inline-block; }
 
+  .exerpt { padding-left: 40%; }
+
 }
 
 @media (min-width: 1280px) {
@@ -229,5 +231,5 @@ footer { border-bottom: 5px solid #F7BE00; }
 
   nav a, h3 { font-size: 1.4rem; }
 
-  .exerpt { padding-left: 40%; }
+
 }
