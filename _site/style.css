@@ -123,7 +123,7 @@ footer {
 
 /* Utility classes */
 
-.hide { display: none; }
+.hide, .desktop-nav { display: none; }
 
 .center       { text-align: center;  }
 .right        { text-align: right;   }
@@ -182,17 +182,10 @@ footer {
 @media (min-width: 360px) {
 
   .fa-bars { font-size: 2.5rem; }
+
 }
 
 @media (min-width: 768px) {
-
-  h1 { font-size: 4rem;    }
-
-  h2 { font-size: 7rem;    }
-
-  h3 { font-size: 1.16rem; }
-
-  h4 { font-size: 2.5rem;  }
 
   p {
     font-size: 1.2rem;
@@ -203,4 +196,29 @@ footer {
     padding: 1rem 3rem;
   }
 
+}
+
+@media (min-width: 812px) {
+
+
+  h1 { font-size: 4rem;    }
+
+  h2 { font-size: 7rem;    }
+
+  h3 { font-size: 1.16rem; }
+
+  h4 { font-size: 2.5rem;  }
+
+  nav a {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .burger      { display: none;         }
+
+  .desktop-nav { display: inline-block; }
 }
