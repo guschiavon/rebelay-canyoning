@@ -16,7 +16,6 @@ img { max-width: 100%; }
 [class*="grid"],[class*="col"],[class~="grid"],[class~="col"] {
   margin: 0;
   padding: 0;
-
 }
 
 /* Default styles */
@@ -36,9 +35,7 @@ h1 { font-size: 2.5rem; }
 
 h2 { font-size: 4rem; }
 
-h3 {
-  font-size: .73rem;
-}
+h3 { font-size: .73rem; }
 
 h4 {
   font-size: 1.7rem;
@@ -117,9 +114,7 @@ ul li {
   src: url("/styles/fonts/Frontage-Regular.otf") format("otf");
 }
 
-footer {
-  border-bottom: 5px solid #F7BE00;
-}
+footer { border-bottom: 5px solid #F7BE00; }
 
 /* Utility classes */
 
