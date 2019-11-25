@@ -55,7 +55,10 @@ h3, nav a, li, .button {
   font-family: "Frontage-Regular";
 }
 
-.nav-bar { margin-bottom: 2rem; }
+[class=grid].nav-bar {
+  max-height: 15vh;
+  margin-bottom: 2rem;
+}
 
 nav a {
   padding: .2rem .5rem;
@@ -172,6 +175,7 @@ footer { border-bottom: 5px solid #F7BE00; }
 }
 
 
+
 /* Media Queries for screen sizes */
 
 @media (min-width: 360px) {
@@ -216,4 +220,14 @@ footer { border-bottom: 5px solid #F7BE00; }
   .burger      { display: none;         }
 
   .desktop-nav { display: inline-block; }
+
+}
+
+@media (min-width: 1280px) {
+
+  h1 { font-size: 5rem; }
+
+  nav a, h3 { font-size: 1.4rem; }
+
+  .exerpt { padding-left: 40%; }
 }
