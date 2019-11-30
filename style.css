@@ -133,7 +133,7 @@ footer { border-bottom: 5px solid #F7BE00; }
 .full-height   {  min-height: 100vh;  }
 .half-height   {  min-height: 50vh;   }
 .third-height  {  min-height: 33vh;   }
-.double-height {  min-height: 200vh:  }
+.photo-height  {  min-height: 100%;   }
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
@@ -173,6 +173,21 @@ footer { border-bottom: 5px solid #F7BE00; }
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
+.image-container { position: relative; }
+
+.caption-large {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  max-width: 50%;
+}
+
+.caption-small {
+  font-style: italic;
+  font-size: .5rem;
+  padding: 1rem .5rem;
+}
+
 .burger { position: relative; }
 
 .burger a {
@@ -188,11 +203,8 @@ footer { border-bottom: 5px solid #F7BE00; }
   right: 5%;
 }
 
-.caption-large p {
-  text-transform: italic;
-}
 
-.overlap-image { position: relative; }
+/* .overlap-image { position: relative; } */
 
 /* Media Queries for screen sizes */
 
