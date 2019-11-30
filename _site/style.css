@@ -172,12 +172,13 @@ footer { border-bottom: 5px solid #F7BE00; }
   transition: .3s ease;
 }
 
-.bg-image {
+.bg-image,
+.image-thumb {
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
+.bg-image { box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); }
 
 .caption-large, .caption-wide {
   position: absolute;
@@ -217,32 +218,35 @@ footer { border-bottom: 5px solid #F7BE00; }
 
 .hexagon {
   /* position: absolute; */
-  height: 50px;
-  width: 60px;
+  height: 6rem;
+  width: 7rem;
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 }
 
 .hexagon.gallery-one {
   position: absolute;
-  left: 45%;
+  left: 7%;
   top: 10%;
 }
 
 .hexagon.gallery-two {
   position: absolute;
-  left: 32%;
-  top: 27%;
+  left: 60%;
+  top: 10%;
 }
 
 .hexagon.gallery-three {
   position: absolute;
-  left: 40%;
-  top: 20%;
+  left: 33.3%;
+  top: 23%;
 }
 
+.hexagon.gallery-four {
+  position: absolute;
+  left: 7%;
+  top: 37%;
+}
 
-
-/* .overlap-image { position: relative; } */
 
 /* Media Queries for screen sizes */
 
