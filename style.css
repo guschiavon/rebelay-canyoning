@@ -51,7 +51,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
-h3, nav a, li, .button { font-family: "Frontage-Regular"; }
+h3,
+nav a,
+li,
+.button { font-family: "Frontage-Regular"; }
 
 [class=grid].nav-bar {
   max-height: 15vh;
@@ -71,7 +74,8 @@ nav a:hover {
   transition: .3s ease;
 }
 
-input, .form-button {
+input,
+.form-button {
   padding: 1rem;
   border: none;
   font-family: "Frontage-Regular", serif;
@@ -119,7 +123,8 @@ footer { border-bottom: 5px solid #F7BE00; }
 
 /* Utility classes */
 
-.hide, .desktop-nav { display: none; }
+.hide,
+.desktop-nav { display: none; }
 
 .center       { text-align: center;  }
 .right        { text-align: right;   }
@@ -187,6 +192,8 @@ footer { border-bottom: 5px solid #F7BE00; }
   text-transform: italic;
 }
 
+.overlap-image { position: relative; }
+
 /* Media Queries for screen sizes */
 
 @media (min-width: 360px) {
@@ -242,7 +249,7 @@ footer { border-bottom: 5px solid #F7BE00; }
 
   h1 { font-size: 5rem; }
 
-  nav a, h3 { font-size: 1.4rem; }
-
+  nav a,
+  h3 { font-size: 1.4rem; }
 
 }
