@@ -73,11 +73,11 @@
               {{ site.stories.last.article_title }}
             </h2>
           </div>
+          {% if page.output == true %}
           <div class="col-12 right">
             <p class="exerpt-right">
               {{ site.stories.last.exerpt }}
             </p>
-            {% if page.output == true %}
             <a href="{{ site.stories.last.url }}" class="button"> Read </a>
             {% endif %}
           </div>
