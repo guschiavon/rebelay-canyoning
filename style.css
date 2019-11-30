@@ -11,7 +11,10 @@ a {
   color: inherit;
 }
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 [class*="grid"],[class*="col"],[class~="grid"],[class~="col"] {
   margin: 0;
@@ -175,12 +178,19 @@ footer { border-bottom: 5px solid #F7BE00; }
 
 .image-container { position: relative; }
 
-.caption-large {
+.caption-large, .caption-wide {
   position: absolute;
   left: 10%;
   bottom: 10%;
-  max-width: 50%;
 }
+
+.caption-large  { max-width: 50%;  }
+
+.caption-wide   {
+  max-width: 100%;
+  right: 10%;
+}
+
 
 .caption-small {
   font-style: italic;
