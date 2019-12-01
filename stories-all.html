@@ -2,21 +2,26 @@
 layout: default
 title: Canyoning Articles - Rebelay
 ---
-<section>
-  <div class="grid padded-sm bg-image third-height" style="background-image: url(/assets/images/placeholder_018.jpg)">
+{% for article in site.stories reversed %}
+
+<section class="story-headlines">
+  <a href="{{ article.url }}">
+  <div class="grid padded-sm bg-image third-height" style="background-image: url({{ article.banner_image }})">
     <div class="col-12 left">
       <h2>
-        <span> 03.</span>
+        <span> 0{{article.article_number}}.</span>
       </h2>
       <h2>
-        Jubilee
+        {{article.article_title}}
       </h2>
       <p class="exerpt-left">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        {{article.exerpt}}
       </p>
     </div>
   </div>
-  <div class="grid padded-sm bg-image third-height" style="background-image: url(/assets/images/placeholder_017.jpg)">
+  </a>
+{% endfor %}
+  <!-- <div class="grid padded-sm bg-image third-height" style="background-image: url(/assets/images/placeholder_017.jpg)">
     <div class="col-12 right">
       <h2>
         <span> 02. </span>
@@ -28,5 +33,5 @@ title: Canyoning Articles - Rebelay
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
     </div>
-  </div>
+  </div> -->
 </section>

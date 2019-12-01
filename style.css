@@ -85,9 +85,7 @@ input,
   font-size: .7rem;
 }
 
-input {
-  width: 250px;
-}
+input { width: 250px; }
 
 ul li {
   list-style: none;
@@ -136,7 +134,8 @@ footer { border-bottom: 5px solid #F7BE00; }
 .full-height   {  min-height: 100vh;  }
 .half-height   {  min-height: 50vh;   }
 .third-height  {  min-height: 33vh;   }
-.photo-height  {  min-height: 100%;   }
+
+.photo-height  { min-height: 100%;    }
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
@@ -202,6 +201,36 @@ footer { border-bottom: 5px solid #F7BE00; }
 .burger,
 .beehive-gallery,
 .image-container { position: relative; }
+
+
+/* .parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.parallax-layer-base { transform: translateZ(0);    }
+.parallax-layer-back { transform: translateZ(-1px); } */
+
+/* .parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+} */
 
 .burger a {
   position: absolute;
