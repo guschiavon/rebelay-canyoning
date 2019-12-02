@@ -95,11 +95,16 @@ layout: default
         Canyon Facts
       </h4>
       <br>
-      <br>
       <dl class="">
-        <dd> Location: </dd> {{ page.location }}
-        <dd> Duration: </dd> {{ page.duration }}
-        <dd> Rating: </dd> {{ page.rating }}
+        <dd> <strong>Location: </strong> {{ page.location }}</dd>
+        <dd> <strong>Duration: </strong> {{ page.duration }}</dd>
+        <dd> <strong>Tech Level: </strong> {{ page.rating }} <i class="fas fa-question-circle">
+          <p class="tooltip-text">
+            Rating follows the French Canyon Rating system and is composed of three properties: Verticality (represented by the letter V), Aquatic (represented by the letter A) and Committment (represented by a Roman numeral). For the V and A properties, the scale runs from 1 to 7, signifying an increase in difficulty; Committment is rated from I-VI, also increasing in difficulty. Click for more info.
+        </p></i></dd>
+        <dd> <strong>Adventure Level: </strong> {{ page.adventure_rating}}</dd>
+        <dd> <strong>Fun Factor:</strong> {{ page.fun_rating}} </dd>
+        <dd> <strong>Ambiance:</strong> {{ page.ambiance_rating}}  </dd>
         <!-- <dd> Highest waterfall: </dd>{{page.waterfall}} -->
       </dl>
 

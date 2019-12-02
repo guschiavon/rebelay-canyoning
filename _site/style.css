@@ -48,9 +48,20 @@ h4 {
 
 h3, span { color: #F7BE00; }
 
+.about h3 { font-size: 1.2rem; }
+
+.bg-highlight span { color: #2f2f2f; }
+
 p {
   font-size: .9rem;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.smallprint {
+  font-size: .7rem;
+  font-style: italic;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -92,6 +103,8 @@ ul li {
   font-size:
 }
 
+dl dd { margin-bottom: .5rem; }
+
 ::placeholder {
   margin: 1.5rem;
   color: #F7BE00;
@@ -114,6 +127,24 @@ ul li {
   margin-right: 1rem;
 }
 
+.fa-question-circle {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.fa-question-circle .tooltip-text {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  font-size: .5rem;
+  background-color: #2f2f2f;
+}
+
+.fa-question-circle:hover .tooltip-text {
+  display: inline-block;
+}
+
 @font-face {
   font-family: "Frontage-Regular";
   font-style: normal;
@@ -131,14 +162,22 @@ footer { border-bottom: 5px solid #F7BE00; }
 .right        { text-align: right;   }
 .left         { text-align: left;    }
 
-.full-height   {  min-height: 100vh;  }
-.half-height   {  min-height: 50vh;   }
-.third-height  {  min-height: 33vh;   }
+.full-height    {  min-height: 100vh;  }
+.half-height    {  min-height: 50vh;   }
+.third-height   {  min-height: 33vh;   }
+.quarter-height {  min-height: 25vh;   }
 
 .photo-height  { min-height: 100%;    }
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .bg-dark {
   background-color: #707070;
@@ -160,7 +199,7 @@ footer { border-bottom: 5px solid #F7BE00; }
 .button {
   display: inline-block;
   border: 1px solid #F7BE00;
-  padding: .5rem 2rem;
+  padding: .8rem 2rem;
   font-size: 1rem;
   color: #F7BE00;
   transition: .3s ease;
@@ -170,6 +209,8 @@ footer { border-bottom: 5px solid #F7BE00; }
   background-color: #e5e5e5;
   transition: .3s ease;
 }
+
+.clickable-logo:hover { color: #e5e5e5; }
 
 .bg-image,
 .image-thumb {
@@ -232,6 +273,8 @@ footer { border-bottom: 5px solid #F7BE00; }
   z-index: -1;
 } */
 
+/* Nav menus */
+
 .burger a {
   position: absolute;
   top: 5px;
@@ -244,6 +287,8 @@ footer { border-bottom: 5px solid #F7BE00; }
   top: 2%;
   right: 5%;
 }
+
+/* hexagon gallery */
 
 .hexagon {
   /* position: absolute; */
@@ -275,7 +320,6 @@ footer { border-bottom: 5px solid #F7BE00; }
   left: 7%;
   top: 37%;
 }
-
 
 /* Media Queries for screen sizes */
 
@@ -334,4 +378,9 @@ footer { border-bottom: 5px solid #F7BE00; }
   nav a,
   h3 { font-size: 1.4rem; }
 
+  .about h3 {font-size: 2rem;}
+
+  .about .quarter-height {
+    min-height: 100vh;
+  }
 }
