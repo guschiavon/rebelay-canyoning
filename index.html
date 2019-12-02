@@ -1,98 +1,20 @@
 ---
 layout: default
-article_number: 04
-article_title: Malishan
-banner_image: https://gusschiavonblog.files.wordpress.com/2018/12/taiwan_tce_010.jpg
-article_author: Gus Schiavon
-article_photographer: Gus Schiavon
-article_date: 17 November 2017
-exerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-output: true
 ---
-  <header>
-    <div class="col-12-top grid-spaceBetween nav-bar">
-      <div class="col-4_sm-6_md-4 logo">
-        <a href="/">
-          <h1>
-            Re<span>:</span>belay
-          </h1>
-        </a>
-        <h3>
-          Pure canyoning
-        </h3>
+
+
+        <h2>
+          <span> 0{{ site.stories.last.article_number }}. </span>
+        </h2>
+        <h2>
+          {{ site.stories.last.article_title }}
+        </h2>
       </div>
-      <div class="col-4 right burger">
-        <a href="#"> <i class="fas fa-bars"></i>
-          <div class="mobile-nav hide">
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="/stories-all"> Stories </a>
-              </li>
-              <li>
-                <a href="#"> Shop </a>
-              </li>
-              <li>
-                <a href="#"> Contact </a>
-              </li>
-            </ul>
-          </div>
-        </a>
+      {% if page.output == true %}
+      <div class="col-12 right">
+        <p class="exerpt-right">
+          {{ site.stories.last.exerpt }}
+        </p>
+        <a href="{{ site.stories.last.url }}" class="button"> Read </a>
+      {% endif %}
       </div>
-      <div class="col-8_sm-6_md-8-middle desktop-nav right">
-        <nav>
-          <a href="#"> About </a>
-          <a href="/stories-all"> Stories </a>
-          <a href="#"> Shop </a>
-          <a href="#"> Contact </a>
-        </nav>
-      </div>
-    </div>
-    <div class="grid padded-sm banner bg-image" style="background-image: url({{ site.stories.last.banner_image }})">
-      <div class="col-12 grid-column-bottom">
-        <div class="col-12 right">
-          <h2>
-            <span> 0{{ site.stories.last.article_number }}. </span>
-          </h2>
-          <h2>
-            {{ site.stories.last.article_title }}
-          </h2>
-        </div>
-        {% if page.output == true %}
-        <div class="col-12 right">
-          <p class="exerpt-right">
-            {{ site.stories.last.exerpt }}
-          </p>
-          <a href="{{ site.stories.last.url }}" class="button"> Read </a>
-        {% endif %}
-        </div>
-      </div>
-    </div>
-  </header>
-  {{ content }}
-  <footer>
-    <section class="half-height center padded-sm">
-      <h4>
-        Fresh from the canyon<span>:</span>
-      </h4>
-      <p>
-        Get notified via email when an article is published. No spam.
-      </p>
-      <form class="" action="index.html" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
-        <button type="button" name="button" class="form-button">
-          Click to subscribe
-        </button>
-      </form>
-      <br>
-      <h4>
-        Re<span>:</span>belay<span>.</span>com
-      </h4>
-      <div class="social-icons center">
-        <a href="#"> <i class="fab fa-facebook-square"></i> </a>
-        <a href="#"> <i class="fab fa-instagram"></i> </a>
-      </div>
-    </section>
-  </footer>
