@@ -46,7 +46,7 @@ h4 {
   margin-top: 1.5rem;
 }
 
-h3, span { color: #F7BE00; }
+h3, span, label { color: #F7BE00; }
 
 .about h3 { font-size: 1.2rem; }
 
@@ -89,19 +89,22 @@ nav a:hover {
 }
 
 input,
+textarea,
 .form-button {
   padding: 1rem;
   border: none;
-  font-family: "Frontage-Regular", serif;
   font-size: .7rem;
+  margin-bottom: 1rem;
+  width: 80%;
 }
 
-input { width: 250px; }
-
-ul li {
-  list-style: none;
-  font-size:
+.contact-form label {
+  display: block;
+  font-family: "Frontage-Regular", serif;
+  margin-bottom: .5rem;
 }
+
+ul li { list-style: none; }
 
 dl dd { margin-bottom: .5rem; }
 
@@ -109,6 +112,7 @@ dl dd { margin-bottom: .5rem; }
   margin: 1.5rem;
   color: #F7BE00;
   opacity: .8;
+  font-family: "Frontage-Regular", serif;
 }
 
 .form-button {
@@ -198,6 +202,7 @@ footer { border-bottom: 5px solid #F7BE00; }
 
 .button {
   display: inline-block;
+  background-color: inherit;
   border: 1px solid #F7BE00;
   padding: .8rem 2rem;
   font-size: 1rem;
@@ -210,7 +215,10 @@ footer { border-bottom: 5px solid #F7BE00; }
   transition: .3s ease;
 }
 
-.clickable-logo:hover { color: #707070; }
+.clickable-logo:hover {
+  color: #707070;
+  transition: .3s all;
+}
 
 .bg-image,
 .image-thumb {

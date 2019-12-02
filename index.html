@@ -2,19 +2,17 @@
 layout: default
 ---
 
-
-        <h2>
-          <span> 0{{ site.stories.last.article_number }}. </span>
-        </h2>
-        <h2>
-          {{ site.stories.last.article_title }}
-        </h2>
-      </div>
-      {% if page.output == true %}
-      <div class="col-12 right">
-        <p class="exerpt-right">
-          {{ site.stories.last.exerpt }}
-        </p>
-        <a href="{{ site.stories.last.url }}" class="button"> Read </a>
-      {% endif %}
-      </div>
+    <h2>
+      <span> 0{{ site.stories.last.article_number }}. </span>
+    </h2>
+    <h2>
+      {{ site.stories.last.article_title }}
+    </h2>
+  {% if page.output == true %}
+  <div class="col-12 right">
+    <p class="exerpt-right">
+      {{ site.stories.last.exerpt }}
+    </p>
+    <a href="{{ site.stories.last.url }}" class="button"> Read </a>
+  {% endif %}
+  </div>
