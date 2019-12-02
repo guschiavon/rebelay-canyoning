@@ -2,6 +2,28 @@
 layout: default
 ---
 
+<div class="col-12 grid padded-sm banner bg-image" style="background-image: url({{ page.banner_image }})">
+  <!-- <img src="{{ page.banner_image }}" class="absolute" alt=""> -->
+  <div class="col-12 grid-column-bottom">
+    <div class="col-12 right">
+      <h2>
+        <span> 0{{ page.article_number }}. </span>
+      </h2>
+      <h2>
+        {{ page.article_title }}
+      </h2>
+      {% if page.output == true %}
+      <div class="col-12 right">
+        <p class="exerpt-right">
+          {{ site.stories.last.exerpt }}
+        </p>
+        <a href="{{ page.url }}" class="button"> Read </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
 <section class="bg-dark third-height">
   <div class="padded-lg">
     <h2>

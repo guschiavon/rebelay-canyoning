@@ -155,7 +155,10 @@ dl dd { margin-bottom: .5rem; }
   src: url("/styles/fonts/Frontage-Regular.otf") format("otf");
 }
 
-footer { border-bottom: 5px solid #F7BE00; }
+footer {
+  border-top: 5px solid #F7BE00;
+  border-bottom: 5px solid #F7BE00;
+}
 
 /* Utility classes */
 
@@ -195,9 +198,13 @@ footer { border-bottom: 5px solid #F7BE00; }
 
 .bg-highlight { background-color: #F7BE00; }
 
-.banner {
-  min-height: 90vh;
-  border-bottom: 5px solid #F7BE00;
+.banner { min-height: 80vh; }
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .button {
