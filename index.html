@@ -1,11 +1,11 @@
 ---
 layout: default
+banner_image: {{site.stories.last.banner_image}}
 ---
-<div class="col-12 grid padded-sm banner">
-  <img src="{{ site.stories.last.banner_image }}" class="absolute" alt="">
+<div class="col-12 grid padded-sm banner bg-image">
   <div class="col-12 grid-column-bottom">
     <div class="col-12 right">
-      <a href="{{site.stories.last.url}}"><h2>
+      <a href="{{ site.stories.last.url }}"><h2>
         <span> 0{{ site.stories.last.article_number }}. </span>
       </h2>
       <h2>
