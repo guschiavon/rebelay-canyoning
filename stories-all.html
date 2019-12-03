@@ -4,21 +4,28 @@ title: Canyoning Articles - Rebelay
 ---
 
 <section class="story-headlines">
-  <a href="{{ site.stories.last.url }}">
+
   <div class="grid padded-sm bg-image opacity third-height main" style="background-image: url({{ site.stories.last.banner_image }})">
     <div class="col-12 right">
-      <h2>
+      <h3>
+        Latest story
+      </h3>
+      <h3>
+        {{site.stories.last.layout}}
+      </h3>
+      <a href="{{ site.stories.last.url }}">
+        <h2>
         <span> 0{{site.stories.last.article_number}}.</span>
-      </h2>
-      <h2>
+        </h2>
+        <h1>
         {{site.stories.last.article_title}}
-      </h2>
-      <p class="exerpt-right">
+        </h1>
+        <p class="exerpt-right">
         {{site.stories.last.exerpt}}
-      </p>
+        </p>
+      </a>
     </div>
   </div>
-  </a>
 </section>
 
 {% for article in site.stories reversed %}
@@ -27,6 +34,9 @@ title: Canyoning Articles - Rebelay
   <a href="{{ article.url }}">
   <div class="grid padded-sm bg-image opacity third-height" style="background-image: url({{ article.banner_image }})">
     <div class="col-12 left">
+      <h3>
+        {{article.layout}}
+      </h3>
       <h2>
         <span> 0{{article.article_number}}.</span>
       </h2>
