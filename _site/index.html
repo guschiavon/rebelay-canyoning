@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Rebelay - Pure Canyoning </title>
+
+    <!-- for Media Queries to work -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      
+    </title>
 
     <!-- Google Fonts API -->
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet">
@@ -14,32 +20,33 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- for Media Queries to work -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load local copy of jQuery from the js folder -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
 
     <!-- master CSS file; keep it at end of HEAD -->
     <link rel="stylesheet" href="/style.css">
 
   </head>
   <body>
-      <header>
-    <div class="col-12-top grid-spaceBetween nav-bar">
-      <div class="col-4_sm-6_md-4 logo">
-        <a href="/">
-          <h1>
-            Re<span>:</span>belay
-          </h1>
-        </a>
-        <h3>
-          Pure canyoning
-        </h3>
-      </div>
-      <div class="col-4 right burger">
-        <a href="#"> <i class="fas fa-bars"></i>
-          <div class="mobile-nav hide">
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="/">
+              <h1>
+                Re<span>:</span>belay
+              </h1>
+            </a>
+            <h3>
+              Pure canyoning
+            </h3>
+          </div>
+          <div class="right burger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="mobile-nav">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="/stories-all"> Stories </a>
@@ -48,97 +55,85 @@
                 <a href="#"> Shop </a>
               </li>
               <li>
-                <a href="#"> Contact </a>
+                <a href="/contact"> Contact </a>
               </li>
             </ul>
           </div>
-        </a>
-      </div>
-      <div class="col-8_sm-6_md-8-middle desktop-nav right">
-        <nav>
-          <a href="#"> About </a>
-          <a href="/stories-all"> Stories </a>
-          <a href="#"> Shop </a>
-          <a href="#"> Contact </a>
-        </nav>
-      </div>
-    </div>
-    <div class="grid padded-sm banner bg-image" style="background-image: url(/assets/images/placeholder_014.jpg)">
-      <div class="col-12 grid-column-bottom">
-        <div class="col-12 right">
-          <h2>
-            <span> 04. </span>
-          </h2>
-          <h2>
-            Malishan
-          </h2>
-        </div>
-        
-        <div class="col-12 right">
-          <p class="exerpt-right">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <a href="/stories/2019-03-15-taiwan-canyoning-expedition.html" class="button"> Read </a>
-        
-        </div>
-      </div>
-    </div>
-  </header>
-    <section class="grid about">
-    <div class="col-6_md-12-middle flex-center quarter-height padded-lg center bg-highlight">
-      <a href="/" class="clickable-logo">
-        <h2>
-          Re<span>:</span>belay
-        </h2>
-        <h3>
-          <span>Pure canyoning</span>
-        </h3>
-      </a>
-    </div>
-    <div class="col-6_md-12-middle padded-lg">
-      <div class="grid">
-        <h1 class="col-12 center padded-lg">About us<span>:</span></h1>
-        <div class="col-12-middle center padded-lg">
-          <p class="editable">
-            Re<span>:</span>belay is born out of <span>passion</span>. <br><br>Passion for adventure. For nature. Passion for travel, photography, for friendship.<br><br> Passion for <span>canyoning</span>.<br><br> Re<span>:</span>belay is a collection of epic endeavours and bold descents aimed at inspiring canyoneers to not only practice, but <span>live</span> the sport.<br><br> Re<span>:</span>belay is <span>pure canyoning</span>.
-          </p>
-        </div>
-        <div class="col-12-middle center padded-lg">
-          <a href="/contact" class="button padded-sm">Contact us</a>
-          <div class="col-12-middle center padded-lg">
-            <p class="smallprint">
-              All content © Rebelay Media unless otherwise stated. <br> All rights reserved.
-            </p>
+
+          <div class="desktop-nav right">
+            <nav>
+              <a href="/about"> About </a>
+              <a href="/stories-all"> Stories </a>
+              <a href="#"> Shop </a>
+              <a href="/contact"> Contact </a>
+            </nav>
           </div>
         </div>
+        <div class="grid padded-sm banner bg-image" style="background-image:url(/assets/images/placeholder_014.jpg)">
+  <div class="col-12 grid-column-bottom">
+    <div class="col-12 right">
+      <a href="/stories/2019-03-15-taiwan-canyoning-expedition.html"><h2>
+        <span> 04. </span>
+      </h2>
+      <h2>
+        Malishan
+      </h2>
+      </a>
+      <div class="col-12 right">
+        <p class="exerpt-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="/stories/2019-03-15-taiwan-canyoning-expedition.html" class="button"> Read </a>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <footer>
-    <section class="half-height center padded-sm">
-      <h4>
-        Fresh from the canyon<span>:</span>
-      </h4>
-      <p>
-        Get notified via email when an article is published. No spam.
-      </p>
-      <form class="" action="index.html" method="post">
-        <input type="email" name="email" placeholder="Enter your email">
-        <button type="button" name="button" class="form-button">
-          Click to subscribe
-        </button>
-      </form>
-      <br>
-      <h4>
-        Re<span>:</span>belay<span>.</span>com
-      </h4>
-      <div class="social-icons center">
-        <a href="#"> <i class="fab fa-facebook-square"></i> </a>
-        <a href="#"> <i class="fab fa-instagram"></i> </a>
-      </div>
-    </section>
-  </footer>
+    </header>
+    <footer>
+      <section class="half-height center padded-sm">
+        <div>
+          <h4>
+            Fresh from the canyon<span>:</span>
+          </h4>
+          <p class="editable">
+            Get notified via email when an article is published. No spam.
+          </p>
+        </div>
+        <form action="index.html" method="post">
+          <input type="email" name="email" placeholder="Enter your email">
+          <button type="button" name="button" class="form-button">
+            Click to subscribe
+          </button>
+        </form>
+        <br>
+        <div>
+          <h4>
+            Re<span>:</span>belay<span>.</span>com
+          </h4>
+          <div class="social-icons center">
+            <a href="#"> <i class="fab fa-facebook-square"></i> </a>
+            <a href="#"> <i class="fab fa-instagram"></i> </a>
+          </div>
+        </div>
+      </section>
+    </footer>
 
+    <!-- jQuery script -->
+
+    <script>
+
+    console.log('hello from js');
+
+    $(".burger").click(function(){
+      $(".mobile-nav").toggleClass("reveal").animate({transition:0.3,});
+
+      $(this).toggleClass("active");
+
+      console.log("burger clicked");
+
+    });
+
+    </script>
   </body>
 </html>

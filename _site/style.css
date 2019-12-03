@@ -109,9 +109,9 @@ footer input {  max-width: 35%; }
 .mobile-nav ul li, ul li { list-style: none; }
 
 .mobile-nav ul li {
-  background-color: #F7BE00;
+  color: #F7BE00;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 dl dd { margin-bottom: .5rem; }
@@ -173,8 +173,6 @@ footer {
 .hide,
 .desktop-nav { display: none; }
 
-.burger > .reveal { display: flex; }
-
 .center       { text-align: center;  }
 .right        { text-align: right;   }
 .left         { text-align: left;    }
@@ -227,13 +225,23 @@ footer {
   transition: .3s ease;
 }
 
-.button:hover {
+.burger:hover,
+.burger:focus {
+  color: #F7BE00;
+  transition: .3s all;
+}
+
+.button:hover,
+.button:focus {
   background-color: #e5e5e5;
   transition: .3s ease;
 }
 
-.clickable-logo:hover {
-  color: #707070;
+.clickable-logo:hover,
+.clickable-logo:focus,
+.mobile-nav ul li:hover,
+.mobile-nav ul li:focus {
+  color: #909090;
   transition: .3s all;
 }
 
@@ -278,6 +286,7 @@ footer {
   right: 5%;
   padding: 1rem;
   transform: translateY(20%);
+  z-index: 1000;
 }
 
 .desktop-nav {
@@ -285,51 +294,15 @@ footer {
   right: 5%;
   transform: translateY(70px);
 }
-/* .parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.parallax-layer-base { transform: translateZ(0);    }
-.parallax-layer-back { transform: translateZ(-1px); } */
-
-/* .parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  z-index: -1;
-} */
-
-/* Nav menus */
-
-/* .burger a {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 1;
-  padding: .5rem;
-} */
+.active { color: #F7BE00; }
 
 .mobile-nav {
+  height: 50vh;
   display: none;
   font-family: "Frontage-Regular", serif;
   font-size: 1.6rem;
-  background-color: rgba(235,235,235,.8);
-  color: #F7BE00;
+  background-color: rgba(70,70,70,.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -340,10 +313,9 @@ footer {
   justify-content: center;
   z-index: 999;
   transition: .3s all;
-  /* top: 2%;
-  right: 5%; */
 }
 
+.reveal { display: flex; }
 /* hexagon gallery */
 
 .hexagon {

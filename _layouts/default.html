@@ -41,7 +41,7 @@
             </h3>
           </div>
           <div class="right burger">
-            <a href="#"> <i class="fas fa-bars"></i></a>
+            <i class="fas fa-bars"></i>
           </div>
           <div class="mobile-nav">
             <ul>
@@ -73,25 +73,29 @@
     </header>
     <footer>
       <section class="half-height center padded-sm">
-        <h4>
-          Fresh from the canyon<span>:</span>
-        </h4>
-        <p>
-          Get notified via email when an article is published. No spam.
-        </p>
-        <form class="" action="index.html" method="post">
+        <div>
+          <h4>
+            Fresh from the canyon<span>:</span>
+          </h4>
+          <p class="editable">
+            Get notified via email when an article is published. No spam.
+          </p>
+        </div>
+        <form action="index.html" method="post">
           <input type="email" name="email" placeholder="Enter your email">
           <button type="button" name="button" class="form-button">
             Click to subscribe
           </button>
         </form>
         <br>
-        <h4>
-          Re<span>:</span>belay<span>.</span>com
-        </h4>
-        <div class="social-icons center">
-          <a href="#"> <i class="fab fa-facebook-square"></i> </a>
-          <a href="#"> <i class="fab fa-instagram"></i> </a>
+        <div>
+          <h4>
+            Re<span>:</span>belay<span>.</span>com
+          </h4>
+          <div class="social-icons center">
+            <a href="#"> <i class="fab fa-facebook-square"></i> </a>
+            <a href="#"> <i class="fab fa-instagram"></i> </a>
+          </div>
         </div>
       </section>
     </footer>
@@ -103,7 +107,8 @@
     console.log('hello from js');
 
     $(".burger").click(function(){
-      $(".mobile-nav").toggleClass("reveal");
+      $(".mobile-nav").toggleClass("reveal").animate({transition:0.3,});
+
       $(this).toggleClass("active");
 
       console.log("burger clicked");
