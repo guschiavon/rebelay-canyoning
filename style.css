@@ -312,7 +312,7 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  transition: .3s all;
+  /* transition: .3s all; */
 }
 
 .reveal { display: flex; }
