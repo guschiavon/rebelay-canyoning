@@ -37,7 +37,8 @@ layout: default
   </div>
 </section>
 <section class="photo-height">
-  <div class="image-container bg-image parallax" style="background-image:url({{page.large_image}})">
+  <div class="image-container bg-image parallax parallax-1">
+    <img src="{{page.large_image}}" alt="">
     <div class="caption-large padded-lg">
       <h3>
         {{ page.large_image_title }}
@@ -75,8 +76,8 @@ layout: default
   </div>
 </section>
 <section class="photo-height">
-  <div class="image-container bg-image parallax" style="background-image:url({{ page.wide_image }})">
-    <!-- <img src="{{ page.wide_image }}" alt="{{ page.wide_image_alt-text }}"> -->
+  <div class="image-container bg-image parallax">
+    <img src="{{ page.wide_image }}" alt="{{ page.wide_image_alt-text }}">
     <div class="caption-wide padded-lg">
       <h3>
         {{ page.wide_image_title }}
@@ -103,7 +104,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="photo-height">
+<section class="photo-height parallax">
   <div class="image-container">
     <img src="{{ page.full_screen_image }}" alt="{{ page.full_screen_image-alt-text }}">
   </div>

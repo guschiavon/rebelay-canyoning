@@ -203,12 +203,13 @@ footer {
 .right        { text-align: right;   }
 .left         { text-align: left;    }
 
-.full-height    {  min-height: 100vh;  }
+.full-height,
+.photo-height   {  min-height: 100vh;  }
 .half-height    {  min-height: 50vh;   }
 .third-height   {  min-height: 33vh;   }
 .quarter-height {  min-height: 25vh;   }
 
-.photo-height  { min-height: 100%;    }
+.photo-height  { overflow: hidden;  }
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
@@ -279,7 +280,8 @@ footer {
   position: relative;
 }
 
-.parallax::before {
+.parallax::before,
+.parallax img {
   content: "";
   position: absolute;
   top: 0;
@@ -287,10 +289,11 @@ footer {
   right: 0;
   left: 0;
   z-index: -1;
-  transform: translateZ(-1px) scale(1.2);
+  transform: translateZ(-1px) scale(2);
   display: block;
   background-size: cover;
   min-height: 100vh;
+
 }
 
 .bg-image,
@@ -322,6 +325,8 @@ footer {
 .nav-bar,
 .beehive-gallery,
 .image-container { position: relative; }
+
+.image-container img { width: 100%; }
 
 .nav-bar .logo {
   position: absolute;
