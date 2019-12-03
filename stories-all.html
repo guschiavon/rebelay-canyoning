@@ -24,8 +24,9 @@ title: Canyoning Articles - Rebelay
     </div>
   </div>
 </section>
-
-{% for article in site.stories reversed %}
+<!-- The following code creates a sorted list with items from site.stories sorted by their date and in reverse order, then the following forloop is offset to display all but the last -->
+{% assign sorted = (site.stories | sort: 'date') | reverse %}
+  {% for article in sorted offset:1  %}
 
 <section class="story-headlines">
   <a href="{{ article.url }}">
@@ -46,6 +47,7 @@ title: Canyoning Articles - Rebelay
     </div>
   </div>
   </a>
+</section>
 {% endfor %}
   <!-- <div class="grid padded-sm bg-image third-height" style="background-image: url(/assets/images/placeholder_017.jpg)">
     <div class="col-12 right">
