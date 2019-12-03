@@ -62,7 +62,7 @@ h4 {
 .story-headlines h3 {
   display: inline;
   font-family: "Frontage-Regular";
-  font-size: 1rem;
+  font-size: .5rem;
   padding: .5rem;
   margin-right: 1rem;
   border: 1px solid;
@@ -449,7 +449,7 @@ footer {
   h1 { font-size: 5rem; }
 
   nav a,
-  h3 { font-size: 1.4rem; }
+  .logo h3 { font-size: 1.4rem; }
 
   .about h3 {font-size: 2rem;}
 
