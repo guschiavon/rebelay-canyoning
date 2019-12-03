@@ -98,13 +98,21 @@ textarea,
   width: 80%;
 }
 
+footer input {  max-width: 35%; }
+
 .contact-form label {
   display: block;
   font-family: "Frontage-Regular", serif;
   margin-bottom: .5rem;
 }
 
-ul li { list-style: none; }
+.mobile-nav ul li, ul li { list-style: none; }
+
+.mobile-nav ul li {
+  background-color: #F7BE00;
+  display: block;
+  margin-bottom: 1rem;
+}
 
 dl dd { margin-bottom: .5rem; }
 
@@ -164,6 +172,8 @@ footer {
 
 .hide,
 .desktop-nav { display: none; }
+
+.burger > .reveal { display: flex; }
 
 .center       { text-align: center;  }
 .right        { text-align: right;   }
@@ -254,11 +264,27 @@ footer {
   padding: 1rem .5rem;
 }
 
-.burger,
+.nav-bar,
 .beehive-gallery,
 .image-container { position: relative; }
 
+.nav-bar .logo {
+  position: absolute;
+  left: 5%;
+  padding: 1rem;
+}
+.nav-bar .burger {
+  position: absolute;
+  right: 5%;
+  padding: 1rem;
+  transform: translateY(20%);
+}
 
+.desktop-nav {
+  position: absolute;
+  right: 5%;
+  transform: translateY(70px);
+}
 /* .parallax {
   perspective: 1px;
   height: 100vh;
@@ -290,17 +316,32 @@ footer {
 
 /* Nav menus */
 
-.burger a {
+/* .burger a {
   position: absolute;
   top: 5px;
   right: 5px;
   z-index: 1;
   padding: .5rem;
-}
+} */
 
 .mobile-nav {
-  top: 2%;
-  right: 5%;
+  display: none;
+  font-family: "Frontage-Regular", serif;
+  font-size: 1.6rem;
+  background-color: rgba(235,235,235,.8);
+  color: #F7BE00;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5% 3%;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: .3s all;
+  /* top: 2%;
+  right: 5%; */
 }
 
 /* hexagon gallery */
@@ -351,9 +392,7 @@ footer {
     line-height: 1.7;
   }
 
-  .button {
-    padding: 1rem 3rem;
-  }
+  .button { padding: 1rem 3rem; }
 
 }
 
@@ -395,7 +434,5 @@ footer {
 
   .about h3 {font-size: 2rem;}
 
-  .about .quarter-height {
-    min-height: 100vh;
-  }
+  .about .quarter-height { min-height: 100vh; }
 }

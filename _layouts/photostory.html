@@ -1,8 +1,9 @@
 ---
 layout: default
+banner_image: {{ page.banner_image }}
 ---
 
-<div class="col-12 grid padded-sm banner bg-image"> 
+<div class="grid padded-sm banner bg-image">
   <div class="col-12 grid-column-bottom">
     <div class="col-12 right">
       <h2>
@@ -17,7 +18,7 @@ layout: default
           {{ site.stories.last.exerpt }}
         </p>
         <a href="{{ page.url }}" class="button"> Read </a>
-        {% endif %}
+      {% endif %}
       </div>
     </div>
   </div>

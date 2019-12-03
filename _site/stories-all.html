@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Canyoning Articles - Rebelay </title>
+
+    <!-- for Media Queries to work -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Canyoning Articles - Rebelay
+    </title>
 
     <!-- Google Fonts API -->
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet">
@@ -14,53 +20,54 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- for Media Queries to work -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load local copy of jQuery from the js folder -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
 
     <!-- master CSS file; keep it at end of HEAD -->
     <link rel="stylesheet" href="/style.css">
 
   </head>
   <body>
-    <header class="padded-sm" style="background-image: url()">
-      <div class="col-12-top grid-spaceBetween nav-bar">
-        <div class="col-4_sm-6_md-4 logo">
-          <a href="/">
-            <h1>
-              Re<span>:</span>belay
-            </h1>
-          </a>
-          <h3>
-            Pure canyoning
-          </h3>
-        </div>
-        <div class="col-4 right burger">
-          <a href="#"> <i class="fas fa-bars"></i>
-            <div class="mobile-nav hide">
-              <ul>
-                <li>
-                  <a href="/about">About</a>
-                </li>
-                <li>
-                  <a href="/stories-all"> Stories </a>
-                </li>
-                <li>
-                  <a href="#"> Shop </a>
-                </li>
-                <li>
-                  <a href="/contact"> Contact </a>
-                </li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="col-8_sm-6_md-8-middle desktop-nav right">
-          <nav>
-            <a href="/about"> About </a>
-            <a href="/stories-all"> Stories </a>
-            <a href="#"> Shop </a>
-            <a href="/contact"> Contact </a>
-          </nav>
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="/">
+              <h1>
+                Re<span>:</span>belay
+              </h1>
+            </a>
+            <h3>
+              Pure canyoning
+            </h3>
+          </div>
+          <div class="right burger">
+            <a href="#"> <i class="fas fa-bars"></i></a>
+          </div>
+          <div class="mobile-nav">
+            <ul>
+              <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
+                <a href="/stories-all"> Stories </a>
+              </li>
+              <li>
+                <a href="#"> Shop </a>
+              </li>
+              <li>
+                <a href="/contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="desktop-nav right">
+            <nav>
+              <a href="/about"> About </a>
+              <a href="/stories-all"> Stories </a>
+              <a href="#"> Shop </a>
+              <a href="/contact"> Contact </a>
+            </nav>
+          </div>
         </div>
         
 
@@ -132,8 +139,6 @@
   </div> -->
 </section>
 
-      </div>
-
     </header>
     <footer>
       <section class="half-height center padded-sm">
@@ -159,5 +164,21 @@
         </div>
       </section>
     </footer>
+
+    <!-- jQuery script -->
+
+    <script>
+
+    console.log('hello from js');
+
+    $(".burger").click(function(){
+      $(".mobile-nav").toggleClass("reveal");
+      $(this).toggleClass("active");
+
+      console.log("burger clicked");
+
+    });
+
+    </script>
   </body>
 </html>
