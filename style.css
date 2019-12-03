@@ -113,6 +113,8 @@ nav a:hover {
   color: inherit;
   transition: .3s ease;
 }
+/* You can also just fix the markup by removing the space between the elements */
+form {font-size: 0;}
 
 input,
 textarea,
@@ -351,23 +353,27 @@ footer {
 
 .mobile-nav {
   height: 100vh;
-  display: none;
+  display: flex;
   font-family: "Frontage-Regular", serif;
   font-size: 1.6rem;
   background-color: rgba(70,70,70,.8);
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   bottom: 0;
-  left: 0;
   padding: 5% 3%;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  /* transition: .3s all; */
+  transition: .3s all;
 }
 
-.reveal { display: flex; }
+.margin-top-negative-4 { margin-top: -4rem; }
+
+.reveal {
+  right: 0;
+  left: 50vw;
+}
 /* hexagon gallery */
 
 .hexagon {

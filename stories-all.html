@@ -31,7 +31,7 @@ title: Canyoning Articles - Rebelay
 <section class="story-headlines">
   <a href="{{ article.url }}">
   <div class="grid padded-sm bg-image opacity third-height" style="background-image: url({{ article.banner_image }})">
-    <div class="col-12 left">
+    <div class="col-12 {% cycle 'left','right' %}">
       <h3>
         {{article.layout}}
       </h3>
@@ -41,7 +41,7 @@ title: Canyoning Articles - Rebelay
       <h2>
         {{article.article_title}}
       </h2>
-      <p class="exerpt-left">
+      <p class="{% cycle 'exerpt-left' , 'exerpt-right' %}" >
         {{article.exerpt}}
       </p>
     </div>
