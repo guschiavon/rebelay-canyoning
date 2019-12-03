@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Rebelay - Pure Canyoning </title>
+
+    <!-- for Media Queries to work -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      {{ page.title }}
+    </title>
 
     <!-- Google Fonts API -->
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet">
@@ -14,14 +20,96 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- for Media Queries to work -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load local copy of jQuery from the js folder -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
 
     <!-- master CSS file; keep it at end of HEAD -->
     <link rel="stylesheet" href="/style.css">
 
   </head>
   <body>
-    {{content}}
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="/">
+              <h1>
+                Re<span>:</span>belay
+              </h1>
+            </a>
+            <h3>
+              Pure canyoning
+            </h3>
+          </div>
+          <div class="right burger">
+            <a href="#"> <i class="fas fa-bars"></i></a>
+          </div>
+          <div class="mobile-nav">
+            <ul>
+              <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
+                <a href="/stories-all"> Stories </a>
+              </li>
+              <li>
+                <a href="#"> Shop </a>
+              </li>
+              <li>
+                <a href="/contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="desktop-nav right">
+            <nav>
+              <a href="/about"> About </a>
+              <a href="/stories-all"> Stories </a>
+              <a href="#"> Shop </a>
+              <a href="/contact"> Contact </a>
+            </nav>
+          </div>
+        </div>
+        {{content}}
+    </header>
+    <footer>
+      <section class="half-height center padded-sm">
+        <h4>
+          Fresh from the canyon<span>:</span>
+        </h4>
+        <p>
+          Get notified via email when an article is published. No spam.
+        </p>
+        <form class="" action="index.html" method="post">
+          <input type="email" name="email" placeholder="Enter your email">
+          <button type="button" name="button" class="form-button">
+            Click to subscribe
+          </button>
+        </form>
+        <br>
+        <h4>
+          Re<span>:</span>belay<span>.</span>com
+        </h4>
+        <div class="social-icons center">
+          <a href="#"> <i class="fab fa-facebook-square"></i> </a>
+          <a href="#"> <i class="fab fa-instagram"></i> </a>
+        </div>
+      </section>
+    </footer>
+
+    <!-- jQuery script -->
+
+    <script>
+
+    console.log('hello from js');
+
+    $(".burger").click(function(){
+      $(".mobile-nav").toggleClass("reveal");
+      $(this).toggleClass("active");
+
+      console.log("burger clicked");
+
+    });
+
+    </script>
   </body>
 </html>
