@@ -78,6 +78,8 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.main div { margin-top: 40vh;}
+
 h3,
 nav a,
 li,
@@ -294,8 +296,6 @@ footer {
   left: 10%;
   bottom: 10%;
 }
-
-
 
 .caption-wide   {
   max-width: 100%;
