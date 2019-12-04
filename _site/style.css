@@ -43,9 +43,14 @@ body {
   overflow-y: scroll;
 }
 
-h1, h2, h3, h4 { font-weight: normal; }
+h1,
+h2,
+h3,
+h4 { font-weight: normal; }
 
-h1, h2, h4 { font-family: 'DM Serif Display', serif; }
+h1,
+h2,
+h4 { font-family: 'DM Serif Display', serif; }
 
 h1 { font-size: 2.5rem; }
 
@@ -69,7 +74,9 @@ h4 {
   color: #F7BE00;
 }
 
-h3, span, label { color: #F7BE00; }
+h3,
+span,
+label { color: #F7BE00; }
 
 .about h3 { font-size: 1.2rem; }
 
@@ -134,7 +141,8 @@ footer input {  max-width: 35%; }
   margin-bottom: .5rem;
 }
 
-.mobile-nav ul li, ul li { list-style: none; }
+.mobile-nav ul li,
+ul li { list-style: none; }
 
 .mobile-nav ul li {
   color: #F7BE00;
@@ -155,6 +163,7 @@ dl dd { margin-bottom: .5rem; }
   width: 250px;
   display: inline-block;
   background-color: #F7BE00;
+  /* font-family: "Frontage-Regular", serif; */
 }
 
 .fa-bars { font-size: 2rem; }
@@ -189,6 +198,9 @@ dl dd { margin-bottom: .5rem; }
   font-family: "Frontage-Regular";
   font-style: normal;
   src: url("/styles/fonts/Frontage-Regular.otf") format("otf");
+  src: url("/styles/fonts/frontage-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/styles/fonts/frontage-regular-webfont.woff") format('woff'), /* Pretty Modern Browsers */
+       url("/styles/fonts/Frontage-Regular.ttf")  format('truetype'), /* Safari, Android, iOS */
 }
 
 footer {
