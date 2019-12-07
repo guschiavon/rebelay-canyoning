@@ -24,100 +24,28 @@ layout: default
     <h2>
       The beta<span>:</span>
     </h2>
-    <p class="editable">
-      SGHJGjdhgahjdgahjdgjhagfkjhgjdfgjhkadf
-    </p>
+      {{ content }}
   </div>
 </section>
 
-<!-- The large vertical parallax section -->
-<section class="photo-height">
-  <div class="image-container bg-image parallax parallax-1">
-    <img src="{{page.large_image}}" alt="" />
-    <div class="caption-large padded-lg">
-      <h3>
-        {{ page.large_image_title }}
-      </h3>
-      <p class="editable">
-        Hello Guys
-      </p>
-    </div>
-  </div>
-</section>
 
-<!-- The two image-two caption grid -->
-<section class="bg-light">
-  <div class="padded-lg">
-    <div class="grid">
-      <div class="col-7">
-        <img src="{{ page.grid_first_image }}" alt="{{ page.grid_first_image_alt-text }}" />
-      </div>
-      <p class="editable col-5 caption-small right">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-    <div class="grid">
-      <p class="editable col-5-bottom caption-small">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <div class="col-7 margin-top-negative-4">
-        <img src="{{ page.grid_second_image }}" alt="{{ page.grid_second_image_alt-text }}" />
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- The wide parallax section -->
-<section class="photo-height">
-  <div class="image-container bg-image parallax">
-    <img src="{{ page.wide_image }}" alt="{{ page.wide_image_alt-text }}" />
-    <div class="caption-wide padded-lg">
-      <h3>
-        {{ page.wide_image_title }}
-      </h3>
-      <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-  </div>
-</section>
 
-<!-- Hexagon gallery -->
-<section class="bg-highlight half-height beehive-gallery">
-  <div class="padded-lg">
-    <div class="hexagon gallery-one image-thumb">
-      <img src="/assets/images/placeholder_006.jpg" alt="" />
-    </div>
-    <div class="hexagon gallery-two image-thumb">
-      <img src="/assets/images/placeholder_007.jpg" alt="" />
-    </div>
-    <div class="hexagon gallery-three image-thumb">
-      <img src="/assets/images/placeholder_008.jpg" alt="" />
-    </div>
-    <div class="hexagon gallery-four image-thumb">
-      <img src="/assets/images/placeholder_009.jpg" alt="" />
-    </div>
-  </div>
-</section>
 
-<!-- Another full-screen image with Parallax -->
-<section class="photo-height parallax">
-  <div class="image-container">
-    <img src="{{ page.full_screen_image }}" alt="{{ page.full_screen_image-alt-text }}" />
-  </div>
-</section>
+
+
 
 <!-- Canyon key facts section -->
 <section class="canyon-info bg-light half-height">
   <div class="grid-reverse">
     <div class="col-12_sm-12_md-6_lg-6 map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234658.6134047411!2d120.71733907603054!3d23.22339849517381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346efda90bfdd8f5%3A0x1f745ccf19ad05b6!2sTaoyuan%20District%2C%20Kaohsiung%20City%2C%20Taiwan%20848!5e0!3m2!1sen!2sid!4v1575174383707!5m2!1sen!2sid" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      {{page.map_url}}
     </div>
     <div class="col-12_sm-12_md-6_lg-6 padded-lg">
       <h4>
         Canyon Facts
       </h4>
-      <br />
+      <br>
       <dl>
         <dd> <strong>Location: </strong> {{ page.location }} </dd>
         <dd> <strong>Duration: </strong> {{ page.duration }} </dd>
