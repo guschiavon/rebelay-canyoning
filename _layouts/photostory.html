@@ -31,13 +31,13 @@ layout: default
 <!-- The large vertical parallax section -->
 <section class="photo-height">
   <div class="image-container bg-image parallax parallax-1">
-    <img src="{{page.large_image}}" alt="" />
+    <img src="{{ page.large_image }}" alt="{{ page.large_image_alt-text }}" />
     <div class="caption-large padded-lg">
       <h3>
         {{ page.large_image_title }}
       </h3>
       <p>
-        {{page.large_image-caption}}
+        {{ page.large_image_caption }}
       </p>
     </div>
   </div>
@@ -100,7 +100,7 @@ layout: default
         {{ page.wide_image_title }}
       </h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        {{page.wide_image_caption}}
       </p>
     </div>
   </div>
