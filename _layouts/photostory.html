@@ -24,39 +24,24 @@ layout: default
     <h2>
       The beta<span>:</span>
     </h2>
-<<<<<<< HEAD
       {{ content }}
   </div>
 </section>
 
-=======
-    <p class="editable">
-      This is a test of the template
-    </p>
-  </div>
-</section>
-
-<!-- The large vertical parallax section -->
-<section class="photo-height">
-  <div class="image-container bg-image parallax parallax-1">
-    <img src="{{page.large_image}}" alt="" />
-    <div class="caption-large padded-lg">
-      <h3>
-        {{ page.large_image_title }}
-      </h3>
-      <p class="editable">
-        Testing that all works
-      </p>
-    </div>
-  </div>
-</section>
->>>>>>> dab0d55585d240c68e37bfc3ed73590751d41a3d
-
-
-
-
-
-
+{% for block in page.page_blocks.photostory %}
+  {% case block._id %}
+    {% when 'two-photo-grid' %}
+      {% include two-photo-grid.html block=block %}
+    {% when 'article-beta' %}
+      {% include article-beta.html block=block %}
+    {% when 'vertical-parallax' %}
+      {% include vertical-parallax.html block=block %}
+    {% when 'wide-parallax' %}
+      {% include wide-parallax.html block=block %}
+    {% when 'full-screen-parallax' %}
+      {% include full-screen-parallax.html block=block %}
+  {% endcase %}
+{% endfor %}
 
 <!-- Canyon key facts section -->
 <section class="canyon-info bg-light half-height">

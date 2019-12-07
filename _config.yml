@@ -42,3 +42,9 @@ _array_structures:
       image:
       image_title:
       caption_large:
+  article-beta:
+    label: Article Beta
+    icon: text
+    value:
+      _id: article-beta
+      content:
