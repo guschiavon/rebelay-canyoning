@@ -1,6 +1,5 @@
 collections:
   photostories:
-    output: true
     _array_structures:
       content_blocks:
         - label: Vertical Image
@@ -41,3 +40,4 @@ collections:
             hex_three_alt:
             hex_four_image:
             hex_four_alt:
+    output: true
