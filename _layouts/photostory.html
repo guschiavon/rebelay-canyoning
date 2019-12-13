@@ -68,7 +68,7 @@ _array_structures:
   </div>
 </section>
 
-{% for block in page.content_blocks %}
+{% for block in page.page_blocks %}
   {% case block._id %}
     {% when 'two-photo grid' %}
       {% include two-photo-grid.html block=block %}
