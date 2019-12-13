@@ -1,9 +1,8 @@
 ---
 layout: default
-page_blocks:
 ---
 
-<div class="grid padded-sm banner bg-image main" style="background-image: url({{page.banner_image}})">
+<div class="grid padded-sm banner bg-image main" style="background-image: url({{ page.banner_image }})">
   <div class="col-12 grid-column-bottom">
     <div class="col-12 right">
       <h2>
@@ -15,6 +14,20 @@ page_blocks:
     </div>
   </div>
 </div>
+
+<section class="bg-dark third-height">
+  <div class="padded-lg">
+    <h3>
+      Photostory by {% for item in page.page_blocks %} {{ item.article_photographer }} {% endfor %}
+    </h3>
+    <h2>
+      The beta<span>:</span>
+    </h2>
+    <p>
+      {{ content }}
+    </p>
+  </div>
+</section>
 
 {% for block in page.page_blocks %}
   {% case block._id %}
