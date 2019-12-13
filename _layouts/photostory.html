@@ -1,5 +1,6 @@
 ---
 layout: default
+page_blocks:
 article_title:
 article_number:
 article_writer:
@@ -8,7 +9,6 @@ exerpt:
 banner_image:
 large_image:
 wide_image:
-page_blocks:
 ---
 
 <div class="grid padded-sm banner bg-image main" style="background-image: url({{page.banner_image}})">
@@ -24,18 +24,7 @@ page_blocks:
   </div>
 </div>
 
-<!-- The Beta section for opening the article -->
-<section class="bg-dark third-height">
-  <div class="padded-lg">
-    <h3>
-      Photostory by {{page.article_photographer}}
-    </h3>
-    <h2>
-      The beta<span>:</span>
-    </h2>
-      {{ content }}
-  </div>
-</section>
+
 
 {% for block in page.page_blocks %}
   {% case block._id %}

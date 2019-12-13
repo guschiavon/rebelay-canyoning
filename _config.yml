@@ -6,7 +6,7 @@ collections:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: Vertical Image
+    - label: Vertical Parallax
       icon: image
       value:
         _id: vertical-parallax
@@ -19,10 +19,10 @@ _array_structures:
       value:
         _id: two-photo-grid
         grid_top_image:
-        grid_top_image_alt:
+        grid_top_image_alt_text:
         grid_top_image_caption:
         grid_bottom_image:
-        grid_bottom_image_alt:
+        grid_bottom_image_alt_text:
         grid_bottom_image_caption:
     - label: Horizontal Parallax
       icon: image
@@ -30,17 +30,23 @@ _array_structures:
         _id: wide-parallax
         wide_image:
         wide_image_title:
-        wide_image_alt:
+        wide_image_alt_text:
         wide_image_caption:
     - label: Hexagon Gallery
       icon: slideshow
       value:
         _id: hexagon-gallery
         hex_one_image:
-        hex_one_alt:
+        hex_one_alt_text:
         hex_two_image:
-        hex_two_alt:
+        hex_two_alt_text:
         hex_three_image:
-        hex_three_alt:
+        hex_three_alt_text:
         hex_four_image:
-        hex_four_alt:
+        hex_four_alt_text:
+    - label: Beta Section
+      icon: text
+      value:
+        _id: beta-section
+        article_writer:
+        article_photographer:  
