@@ -295,7 +295,7 @@ footer {
 
 .zoom {
   transition: .3s all;
-  min-height: 100vh;
+  min-height: 100%;
   min-width: 100%;
   position: absolute;
   z-index: -1;
