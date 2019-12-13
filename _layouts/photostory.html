@@ -1,14 +1,6 @@
 ---
 layout: default
 page_blocks:
-title:
-article_number:
-article_writer:
-article_photographer:
-exerpt:
-banner_image:
-large_image:
-wide_image:
 ---
 
 <div class="grid padded-sm banner bg-image main" style="background-image: url({{page.banner_image}})">
@@ -26,7 +18,7 @@ wide_image:
 
 {% for block in page.page_blocks %}
   {% case block._id %}
-    {% when 'two-photo grid' %}
+    {% when 'two-photo-grid' %}
       {% include two-photo-grid.html block=block %}
     {% when 'vertical-parallax' %}
       {% include vertical-parallax.html block=block %}

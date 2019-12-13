@@ -1,15 +1,19 @@
 
 <!-- The wide parallax section -->
+{% for item in page.page_blocks %}
+
 <section class="photo-height">
   <div class="image-container bg-image parallax">
-    <img src="{{ page.wide_image }}" alt="{{ page.wide_image_alt-text }}" />
+    <img src="{{ item.wide_image }}" alt="{{ item.wide_image_alt_text }}" />
     <div class="caption-wide padded-lg">
       <h3>
-        {{ page.wide_image_title }}
+        {{ item.wide_image_title }}
       </h3>
       <p>
-        {{page.wide_image_caption}}
+        {{ item.wide_image_caption_text }}
       </p>
     </div>
   </div>
 </section>
+
+{% endfor %}
