@@ -163,7 +163,7 @@ dl dd { margin-bottom: .5rem; }
   width: 250px;
   display: inline-block;
   background-color: #F7BE00;
-  /* font-family: "Frontage-Regular", serif; */
+  font-family: "Frontage-Regular", serif;
 }
 
 .fa-bars { font-size: 2rem; }
