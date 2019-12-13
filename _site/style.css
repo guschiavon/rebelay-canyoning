@@ -290,11 +290,15 @@ footer {
 
 .zoom-container {
   overflow: hidden;
+  position: relative;
 }
 
 .zoom {
   transition: .3s all;
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .zoom-container:hover .zoom,

@@ -1,6 +1,8 @@
 collections:
   stories:
     output: true
+  photostories:
+    output: true
 page_blocks: []
 _array_structures:
   page_blocks:
