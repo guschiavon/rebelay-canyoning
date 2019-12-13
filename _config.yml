@@ -12,18 +12,18 @@ _array_structures:
         _id: vertical-parallax
         large_image:
         large_image_title:
-        large_image_alt:
-        large_image_caption:
+        large_image_alt_text:
+        large_image_caption_text:
     - label: Two Photo Grid
       icon: slideshow
       value:
         _id: two-photo-grid
         grid_top_image:
         grid_top_image_alt_text:
-        grid_top_image_caption:
+        grid_top_image_caption_text:
         grid_bottom_image:
         grid_bottom_image_alt_text:
-        grid_bottom_image_caption:
+        grid_bottom_image_caption_text:
     - label: Horizontal Parallax
       icon: image
       value:
@@ -31,7 +31,7 @@ _array_structures:
         wide_image:
         wide_image_title:
         wide_image_alt_text:
-        wide_image_caption:
+        wide_image_caption_text:
     - label: Hexagon Gallery
       icon: slideshow
       value:
@@ -49,4 +49,4 @@ _array_structures:
       value:
         _id: beta-section
         article_writer:
-        article_photographer:  
+        article_photographer:

@@ -1,8 +1,9 @@
 ---
 layout: default
+page_blocks:
 ---
 
-{% for block in page.content_blocks %}
+{% for block in page.page_blocks %}
   {% case block._id %}
     {% when 'two-photo grid' %}
       {% include two-photo-grid.html block=block %}
@@ -10,5 +11,7 @@ layout: default
       {% include vertical-parallax.html block=block %}
     {% when 'wide-parallax' %}
       {% include wide-parallax.html block=block %}
+    {% when 'article-beta' %}
+      {% include article-beta.html block=block %}
   {% endcase %}
 {% endfor %}

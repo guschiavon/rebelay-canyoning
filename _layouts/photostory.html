@@ -1,7 +1,7 @@
 ---
 layout: default
 page_blocks:
-article_title:
+title:
 article_number:
 article_writer:
 article_photographer:
@@ -18,13 +18,11 @@ wide_image:
         <span> 0{{ page.article_number }}. </span>
       </h2>
       <h2>
-        {{ page.article_title }}
+        {{ page.title }}
       </h2>
     </div>
   </div>
 </div>
-
-
 
 {% for block in page.page_blocks %}
   {% case block._id %}
@@ -34,6 +32,8 @@ wide_image:
       {% include vertical-parallax.html block=block %}
     {% when 'wide-parallax' %}
       {% include wide-parallax.html block=block %}
+    {% when 'article-beta' %}
+      {% include article-beta.html block=block %}
   {% endcase %}
 {% endfor %}
 
