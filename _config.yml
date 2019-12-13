@@ -1,5 +1,5 @@
 collections:
-  photostories:
+  stories:
     _array_structures:
       content_blocks:
         - label: Vertical Image
