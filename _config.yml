@@ -3,7 +3,7 @@ collections:
     output: true
 page_blocks: []
 _array_structures:
-  content_blocks:
+  page_blocks:
     - label: Vertical Image
       icon: image
       value:
