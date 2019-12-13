@@ -116,12 +116,13 @@ nav a {
   transition: .3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: inherit;
   transition: .3s ease;
 }
 /* You can also just fix the markup by removing the space between the elements */
-form {font-size: 0;}
+/* form {font-size: 0;} */
 
 input,
 textarea,
@@ -197,10 +198,10 @@ dl dd { margin-bottom: .5rem; }
 @font-face {
   font-family: "Frontage-Regular";
   font-style: normal;
-  src: url("/styles/fonts/Frontage-Regular.otf") format("otf");
-  src: url("/styles/fonts/frontage-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+  src: url("/styles/fonts/Frontage-Regular.otf") format("otf"),
+       url("/styles/fonts/frontage-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
        url("/styles/fonts/frontage-regular-webfont.woff") format('woff'), /* Pretty Modern Browsers */
-       url("/styles/fonts/Frontage-Regular.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url("/styles/fonts/Frontage-Regular.ttf")  format('truetype'); /* Safari, Android, iOS */
 }
 
 footer {
