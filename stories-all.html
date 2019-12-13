@@ -5,47 +5,48 @@ title: Canyoning Articles - Rebelay
 
 <section class="story-headlines">
 
-  <div class="grid padded-sm bg-image opacity third-height main" style="background-image: url({{ site.photostories.last.banner_image }})">
+  <div class="grid padded-sm bg-image opacity third-height main" style="background-image: url({{ site.stories.last.banner_image }})">
     <div class="col-12 right">
       <h3>
-        {{site.photostories.last.layout}}
+        {{site.stories.last.layout}}
       </h3>
-      <a href="{{ site.photostories.last.url }}">
+      <a href="{{ site.stories.last.url }}">
         <h2>
-        <span> 0{{site.photostories.last.article_number}}.</span>
+        <span> 0{{site.stories.last.article_number}}.</span>
         </h2>
         <h1>
-        {{site.photostories.last.article_title}}
+        {{site.stories.last.article_title}}
         </h1>
         <p class="exerpt-right">
-        {{site.photostories.last.exerpt}}
+        {{site.stories.last.exerpt}}
         </p>
       </a>
     </div>
   </div>
 </section>
-<!-- The following code creates a sorted list with items from site.stories sorted by their date and in reverse order, then the following forloop is offset to display all but the last -->
-{% assign sorted = (site.photostories | sort: 'date') | reverse %}
-  {% for article in sorted offset:1  %}
 
-<section class="story-headlines">
-  <a href="{{ article.url }}">
-  <div class="grid padded-sm bg-image opacity third-height" style="background-image: url({{ article.banner_image }})">
-    <div class="col-12 {% cycle 'left','right' %}">
-      <h3>
-        {{article.layout}}
-      </h3>
-      <h2>
-        <span> 0{{article.article_number}}.</span>
-      </h2>
-      <h2>
-        {{article.article_title}}
-      </h2>
-      <p class="{% cycle 'exerpt-left' , 'exerpt-right' %}" >
-        {{article.exerpt}}
-      </p>
+<!-- The following code creates a sorted list with items from site.stories sorted by their date and in reverse order, then the following forloop is offset to display all but the last -->
+{% assign sorted = (site.stories | sort: 'date') | reverse %}
+  {% for article in sorted offset:1 %}
+
+  <section class="story-headlines zoom-container">
+    <div class="grid padded-sm bg-image opacity zoom" style="background-image: url({{ article.banner_image }})">
+      <a href="{{ article.url }}">
+        <div class="col-12 {% cycle 'left','right' %}" class="ignore-zoom">
+          <h3>
+            {{article.layout}}
+          </h3>
+          <h2>
+            <span> 0{{article.article_number}}.</span>
+          </h2>
+          <h2>
+            {{article.article_title}}
+          </h2>
+          <p class="{% cycle 'exerpt-left' , 'exerpt-right' %}" >
+            {{article.exerpt}}
+          </p>
+        </div>
+      </a>
     </div>
-  </div>
-  </a>
-</section>
+  </section>
 {% endfor %}

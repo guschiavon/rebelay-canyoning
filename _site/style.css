@@ -286,6 +286,27 @@ footer {
   transition: .3s all;
 }
 
+/* This is to make the headlines zoom on hover */
+
+.zoom-container {
+  overflow: hidden;
+}
+
+.zoom {
+  transition: .3s all;
+  height: 100%;
+}
+
+.zoom-container:hover .zoom,
+.zoom-container:focus .zoom
+ { transform: scale(1.1); }
+
+ .zoom-container:hover div .ignore-zoom {
+   transform: none;
+ }
+
+
+/* This adds the parallax effect to images; also have a look at the body selector for more properties that render the effect */
 .parallax {
   box-sizing: border-box;
   width: 100vw;
@@ -316,13 +337,12 @@ footer {
   background-position: center;
 }
 
+/* Pseudo-opacity but works fine! */
 .opacity { box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); }
-
 
 .caption-large,
 .caption-wide {
   position: absolute;
-  /* left: 10%; */
   bottom: 10%;
 }
 
@@ -386,6 +406,7 @@ footer {
   right: 0;
   left: 50vw;
 }
+
 /* hexagon gallery */
 
 .hexagon {
