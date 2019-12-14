@@ -1,17 +1,21 @@
 
 <!-- The large vertical parallax section -->
 {% for item in page.page_blocks %}
-<section class="photo-height">
-  <div class="image-container bg-image parallax parallax-1">
-    <img src="{{ item.large_image }}" alt="{{ item.large_image_alt_text }}" />
-    <div class="caption-large padded-lg">
-      <h3>
-        {{ item.large_image_title }}
-      </h3>
-      <p>
-        {{ item.large_image_caption }}
-      </p>
-    </div>
-  </div>
-</section>
+  {% if item._id == "vertical-parallax" %}
+
+    <section class="photo-height">
+      <div class="image-container bg-image parallax parallax-1">
+        <img src="{{ item.large_image }}" alt="{{ item.large_image_alt_text }}" />
+        <div class="caption-large padded-lg">
+          <h3>
+            {{ item.large_image_title }}
+          </h3>
+          <p>
+            {{ item.large_image_caption_text }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+  {% endif %}
 {% endfor %}

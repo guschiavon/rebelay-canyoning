@@ -1,19 +1,21 @@
 <!-- The Beta section for opening the article -->
 
 {% for item in page.page_blocks %}
+  {% if item._id =="article-beta" %}
 
-<section class="bg-dark third-height">
-  <div class="padded-lg">
-    <h3>
-      Photostory by {{ item.article_photographer }}
-    </h3>
-    <h2>
-      The beta<span>:</span>
-    </h2>
-    <p>
-      {{ item.beta_text }}
-    </p>
-  </div>
-</section>
-
+    <section class="bg-dark third-height">
+      <div class="padded-lg">
+        <h3>
+          Photostory by {{ item.article_photographer }}
+        </h3>
+        <h2>
+          The beta<span>:</span>
+        </h2>
+        <p>
+          {{ item.beta_text }}
+        </p>
+      </div>
+    </section>
+    
+  {% endif %}
 {% endfor %}
