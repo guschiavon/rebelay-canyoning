@@ -181,18 +181,29 @@ dl dd { margin-bottom: .5rem; }
   position: relative;
   display: inline-block;
   width: 150px;
+  padding-right: 1rem;
 }
 
 .fa-question-circle .tooltip-text {
+  width: 250px;
   position: absolute;
+  left: 2.5rem;
+  transform: translateY(-50%);
+  padding: 1rem;
   z-index: 1;
-  display: none;
-  font-size: .5rem;
-  background-color: #2f2f2f;
+  visibility: hidden;
+  font-size: .7rem;
+  color: #2f2f2f;
+  background-color: #F7BE00;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 1s opacity;
 }
 
-.fa-question-circle:hover .tooltip-text {
-  display: inline-block;
+.fa-question-circle:hover .tooltip-text,
+.fa-question-circle:focus .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 @font-face {
@@ -249,13 +260,6 @@ footer {
 .bg-highlight { background-color: #F7BE00; }
 
 .banner { min-height: 80vh; }
-
-/* .banner img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
 
 .button {
   display: inline-block;
