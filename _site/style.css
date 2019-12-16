@@ -241,6 +241,7 @@ footer {
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
 .padded-heavy { padding: 7% 20%;     }
+.padded-top-bottom-4 { padding: 4rem 0; }
 
 .flex-center {
   display: flex;
