@@ -2,6 +2,38 @@
 layout: default
 page_blocks:
 ---
+<div class="grid padded-sm banner bg-image main" style="background-image: url({{ page.banner_image }})">
+  <div class="col-12 grid-column-bottom">
+    <div class="col-12 right">
+      <h2>
+        <span> 0{{ page.article_number }}. </span>
+      </h2>
+      <h2>
+        {{ page.title }}
+      </h2>
+    </div>
+  </div>
+</div>
+<section class="bg-light">
+  <div class="padded-heavy">
+    <div class="article-info">
+      <h3>
+        {{ page.date | date_to_long_string }}
+      </h3>
+      <h3>
+        Story by {{ page.article_writer }}
+      </h3>
+      <h3>
+        Photography by {{ page.article_photographer }}
+      </h3>
+    </div>
+    <br>
+    <br>
+    <div>
+      {{ content }}
+    </div>
+  </div>
+</section>
 
 {% for block in page.page_blocks %}
   {% case block._id %}

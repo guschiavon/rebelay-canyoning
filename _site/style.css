@@ -169,7 +169,8 @@ dl dd { margin-bottom: .5rem; }
 
 .fa-bars { font-size: 2rem; }
 
-.fab {
+.fab,
+.share-icons {
   font-size: 3rem;
   opacity: .7;
   padding: .5rem;
@@ -239,6 +240,7 @@ footer {
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
+.padded-heavy { padding: 7% 20%;     }
 
 .flex-center {
   display: flex;

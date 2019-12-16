@@ -1,0 +1,16 @@
+<section class="full-height bg-light">
+  <div class="padded-lg">
+    <h3>
+      {{ page.published_at | date: "%d %b %y" }}
+    </h3>
+    <h3>
+      Story by {{ page.article_writer }}
+    </h3>
+    <h3>
+      Photography by {{ page.article_photographer }}
+    </h3>
+
+    {{content}}
+
+  </div>
+</section>
