@@ -437,24 +437,19 @@ footer {
 
 /* Hexagon section with quote */
 
-.hexagon-section-top {
-  background-color: #e5e5e5;
-  height: 15rem;
-  /* clip-path: polygon(50% 55%, 0% 100%, 100% 100%); */
-}
-
-.hexagon-section-bottom {
-  background-color: #e5e5e5;
-  height: 40rem;
-  width: 100%;
-  clip-path: polygon(50% 55%, 100% 0%, 100% 100%);
-}
-
 .hexagon-quote {
   color: #F7BE00;
   background-color: #2f2f2f;
   max-width: 60%;
   font-style: italic;
+}
+
+/* hexagon SVG positioning */
+
+.image-container svg {
+  position: absolute;
+  top: 0;
+  left: -10%;
 }
 
 /* hexagon gallery */
@@ -465,6 +460,9 @@ footer {
   width: 7rem;
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 }
+
+.fill-gray { background-color: #EEEEEE; }
+.fill-yellow { background-color: #F7BE00; }
 
 .hexagon.gallery-one {
   position: absolute;
