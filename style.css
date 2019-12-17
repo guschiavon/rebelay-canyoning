@@ -240,7 +240,7 @@ footer {
 
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
-.padded-heavy { padding: 7% 20%;     }
+.padded-heavy { padding: 7% 15%;     }
 .padded-top-bottom-4 { padding: 4rem 0; }
 
 .flex-center {
@@ -319,6 +319,12 @@ footer {
 .zoom-container:focus .zoom
  { transform: scale(1.1); }
 
+.half-section-horizontal img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.half-section-horizontal { position: relative; }
 
 /* This adds the parallax effect to images; also have a look at the body selector for more properties that render the effect */
 .parallax {
@@ -360,13 +366,13 @@ footer {
   bottom: 10%;
 }
 
-.caption-large { max-width: 80%; }
+.caption-large { max-width: 70%; }
 
 .caption-wide  { max-width: 100%; }
 
 .caption-small {
   font-style: italic;
-  font-size: .5rem;
+  font-size: .8rem;
   padding: 1rem .5rem;
 }
 
@@ -419,6 +425,36 @@ footer {
 .reveal {
   right: 0;
   left: 50vw;
+}
+
+.opacity-column {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Hexagon section with quote */
+
+.hexagon-section-top {
+  background-color: #e5e5e5;
+  height: 15rem;
+  /* clip-path: polygon(50% 55%, 0% 100%, 100% 100%); */
+}
+
+.hexagon-section-bottom {
+  background-color: #e5e5e5;
+  height: 40rem;
+  width: 100%;
+  clip-path: polygon(50% 55%, 100% 0%, 100% 100%);
+}
+
+.hexagon-quote {
+  color: #F7BE00;
+  background-color: #2f2f2f;
+  max-width: 60%;
+  font-style: italic;
 }
 
 /* hexagon gallery */
