@@ -467,8 +467,6 @@ footer {
   display: inline-block;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   overflow: hidden;
-  object-fit: cover;
-  object-position: center;
 }
 
 .hexagon-row-2,
