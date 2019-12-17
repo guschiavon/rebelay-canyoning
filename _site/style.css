@@ -12,7 +12,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -377,7 +377,6 @@ footer {
 }
 
 .nav-bar,
-.beehive-gallery,
 .image-container { position: relative; }
 
 .image-container img { width: 100%; }
@@ -453,40 +452,34 @@ footer {
 }
 
 /* hexagon gallery */
-
-.hexagon {
-  /* position: absolute; */
+.beehive-gallery a { padding: 1rem; }
+/* .hexagon {
+  position: absolute;
   height: 6rem;
   width: 7rem;
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+} */
+
+.hexagon  {
+  height: 200px;
+  width: 180px;
+  background-color: #2f2f2f;
+  display: inline-block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
+
+.hexagon-row-2,
+.hexagon-row-3 { margin-top: -4.5rem; }
+
+/* .hexagon-row-2 { margin-left: 12rem; } */
+
 
 .fill-gray { background-color: #EEEEEE; }
 .fill-yellow { background-color: #F7BE00; }
 
-.hexagon.gallery-one {
-  position: absolute;
-  left: 7%;
-  top: 10%;
-}
-
-.hexagon.gallery-two {
-  position: absolute;
-  left: 60%;
-  top: 10%;
-}
-
-.hexagon.gallery-three {
-  position: absolute;
-  left: 33.3%;
-  top: 23%;
-}
-
-.hexagon.gallery-four {
-  position: absolute;
-  left: 7%;
-  top: 37%;
-}
 
 /* Media Queries for screen sizes */
 
