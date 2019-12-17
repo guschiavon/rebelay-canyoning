@@ -91,6 +91,7 @@
       </section>
       {% endif %} -->
       <section class="half-height center padded-sm">
+
         {% if page.share_icons == true %}
 
         <div class="center">
@@ -98,15 +99,16 @@
             Share this article<span>:</span>
           </h4>
           <div class="center share-icons">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.facebook.com/sharer.php?u={{page.url_encode}}" target="_blank"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-twitter-square"></i></a>
             <a href="#"><i class="fab fa-whatsapp-square"></i></a>
             <a href="#"><i class="fab fa-snapchat-square"></i></a>
-            <a href="#"><i class="fas fa-envelope-square"></i></a>
+            <a href="mailto:?subject=Awesome canyoning article &body=Hey, have a look at this awesome canyoning story and photos from Rebelay.com: {{page.url}}" target="_blank"><i class="fas fa-envelope-square"></i></a>
           </div>
         </div>
 
         {% endif %}
+
         <div>
           <h4>
             Fresh from the canyon<span>:</span>

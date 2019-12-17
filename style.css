@@ -170,12 +170,12 @@ dl dd { margin-bottom: .5rem; }
 .fa-bars { font-size: 2rem; }
 
 .fab,
-.share-icons {
+.share-icons,
+.share-icons .fas {
   font-size: 3rem;
   opacity: .7;
   padding: .5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: auto;
 }
 
 .fa-question-circle {
@@ -348,7 +348,6 @@ footer {
   display: block;
   background-size: cover;
   min-height: 100vh;
-
 }
 
 .bg-image,
@@ -453,12 +452,6 @@ footer {
 
 /* hexagon gallery */
 .beehive-gallery a { padding: 1rem; }
-/* .hexagon {
-  position: absolute;
-  height: 6rem;
-  width: 7rem;
-  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-} */
 
 .hexagon  {
   height: 200px;
@@ -471,9 +464,6 @@ footer {
 
 .hexagon-row-2,
 .hexagon-row-3 { margin-top: -4.5rem; }
-
-/* .hexagon-row-2 { margin-left: 12rem; } */
-
 
 .fill-gray { background-color: #EEEEEE; }
 .fill-yellow { background-color: #F7BE00; }
