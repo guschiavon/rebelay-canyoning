@@ -1,0 +1,21 @@
+
+<!-- The wide parallax section -->
+{% for item in page.page_blocks %}
+  {% if item._id == "wide-parallax" %}
+
+    <section class="photo-height">
+      <div class="image-container bg-image parallax">
+        <img src="{{ item.wide_image }}" alt="{{ item.wide_image_alt_text }}" />
+        <div class="caption-wide padded-lg">
+          <h3>
+            {{ item.wide_image_title }}
+          </h3>
+          <p>
+            {{ item.wide_image_caption_text }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+  {% endif %}
+{% endfor %}
