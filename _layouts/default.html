@@ -62,7 +62,6 @@
               </li>
             </ul>
           </div>
-
           <div class="desktop-nav right">
             <nav>
               <a href="/about"> About </a>
@@ -72,24 +71,19 @@
             </nav>
           </div>
         </div>
-        {{ content }}
-    </header>
 
+    {% if page.latest == true %}
+      {% include latest-header.html %}
+    {% elsif page.latest == "home" %}
+      {% include home-header.html %}
+    {% else %}
+      {% include article-header.html %}
+    {% endif %}
+
+    </header>
+      {{content}}
     <footer>
-      <!-- {% if page.share contains "true" %}
-      <section class="center">
-        <h4>
-          Share this article<span>:</span>
-        </h4>
-        <div class="center share-icons">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-whatsapp-square"></i></a>
-          <a href="#"><i class="fab fa-snapchat-square"></i></a>
-          <a href="#"><i class="fas fa-envelope-square"></i></a>
-        </div>
-      </section>
-      {% endif %} -->
+
       <section class="half-height center padded-sm">
 
         {% if page.share_icons == true %}

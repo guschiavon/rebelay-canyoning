@@ -1,29 +1,7 @@
 ---
 layout: default
-title: Canyoning Articles - Rebelay
+latest: true
 ---
-
-<section class="story-headlines">
-
-  <div class="grid padded-sm bg-image opacity third-height main" style="background-image: url({{ site.stories.last.banner_image }})">
-    <div class="col-12 right">
-      <h3>
-        {{site.stories.last.layout}}
-      </h3>
-      <a href="{{ site.stories.last.url }}">
-        <h2>
-        <span> 0{{site.stories.last.article_number}}.</span>
-        </h2>
-        <h1>
-        {{site.stories.last.title}}
-        </h1>
-        <p class="exerpt-right editable">
-        {{site.stories.last.exerpt}}
-        </p>
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- The following code creates a sorted list with items from site.stories sorted by their date and in reverse order, then the following forloop is offset to display all but the last -->
 {% assign sorted = (site.stories | sort: 'date') | reverse %}
