@@ -24,10 +24,18 @@ page_blocks:
       {% include two-photo-grid.html block=block %}
     {% when 'vertical-parallax' %}
       {% include vertical-parallax.html block=block %}
-    {% when 'wide-parallax' %}
-      {% include wide-parallax.html block=block %}
+    {% when 'fullscreen_one' %}
+      {% include wide-parallax-one.html block=block %}
+    {% when 'fullscreen_two' %}
+      {% include wide-parallax-two.html block=block %}
+    {% when 'fullscreen_three' %}
+      {% include wide-parallax-three.html block=block %}
     {% when 'article-beta' %}
       {% include article-beta.html block=block %}
+    {% when 'image-with-paragraph' %}
+      {% include image-with-paragraph.html block=block %}
+    {% when '2-column-paragraph-and-image' %}
+      {% include 2-column-paragraph-and-image.html block=block %}
   {% endcase %}
 {% endfor %}
 

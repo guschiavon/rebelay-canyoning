@@ -73,11 +73,11 @@
         </div>
 
     {% if page.latest == true %}
-      {% include latest-header.html %}
+      {% include header-latest.html %}
     {% elsif page.latest == "home" %}
-      {% include home-header.html %}
+      {% include header-home.html %}
     {% else %}
-      {% include article-header.html %}
+      {% include header-article.html %}
     {% endif %}
 
     </header>

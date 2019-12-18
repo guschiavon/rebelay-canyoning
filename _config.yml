@@ -66,13 +66,13 @@ _array_structures:
         hex_six_alt_text:
         hex_seven_image:
         hex_seven_alt_text:
-    - label: Beta Section
-      icon: text
-      value:
-        _id: beta-section
-        article_writer:
-        article_photographer:
-        beta_text:
+    # - label: Beta Section
+    #   icon: text
+    #   value:
+    #     _id: beta-section
+    #     article_writer:
+    #     article_photographer:
+    #     beta_text:
     - label: Image with Text
       icon: text
       value:
