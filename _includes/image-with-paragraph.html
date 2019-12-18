@@ -3,12 +3,12 @@
   {% if item._id == "image-with-paragraph" %}
 
     <section class="bg-dark grid padded-top-bottom-4">
-      <div class="col-6">
+      <div class="col-6-middle">
         <img src="{{ item.paragraph_image }}" alt="Some alt text here">
       </div>
       <div class="col-6 padded-lg">
         <p>
-          {{item.section_text}}
+          {{ item.section_text }}
         </p>
       </div>
     </section>

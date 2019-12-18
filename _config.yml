@@ -78,3 +78,6 @@ _array_structures:
         _id: 2-column-paragraph-and-image
         inset_image:
         column_text:
+_options:
+  image: # Front matter field
+    uploads_dir: "assets/images/:title"
