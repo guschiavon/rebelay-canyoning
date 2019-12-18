@@ -1,5 +1,5 @@
-<div class="grid padded-sm banner bg-image opacity" style="background-image:url({{site.stories.last.banner_image}})">
-  <!-- <div class="col-12 grid-column-bottom"> -->
+<!-- <div class="grid padded-sm banner bg-image opacity" style="background-image:url({{site.stories.last.banner_image}})">
+  <div class="col-12 grid-column-bottom">
     <div class="col-12-bottom right">
       <a href="{{ site.stories.last.url }}"><h2>
         <span> 0{{ site.stories.last.article_number }}. </span>
@@ -16,4 +16,25 @@
       </div>
     </div>
   </div>
-<!-- </div> -->
+</div> -->
+<div class="story-headlines">
+  <div class="grid padded-sm bg-image opacity third-height main" style="background-image: url({{ site.stories.last.banner_image }})">
+    <div class="col-12 right">
+      <h3>
+        {{ site.stories.last.layout }}
+      </h3>
+      <a href="{{ site.stories.last.url }}">
+        <h2>
+          <span> 0{{ site.stories.last.article_number }}.</span>
+        </h2>
+        <h1>
+          {{ site.stories.last.title }}
+        </h1>
+        <p class="exerpt-right">
+          {{ site.stories.last.exerpt }}
+        </p>
+      </a>
+      <a href="{{ site.stories.last.url }}" class="button"> Read the latest story</a>
+    </div>
+  </div>
+</div>

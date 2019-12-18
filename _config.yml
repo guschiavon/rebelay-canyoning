@@ -6,16 +6,16 @@ collections:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: Vertical Parallax
+    - label: Vertical Fullscreen Image
       icon: image
       value:
         _id: vertical-parallax
-        large_image:
-        large_image_title:
-        large_image_alt_text:
-        large_image_caption_text:
+        vertical_fullscreen_image:
+        vertical_fullscreen_image_title:
+        vertical_fullscreen_image_alt_text:
+        vertical_fullscreen_image_caption_text:
     - label: Two Photo Grid
-      icon: slideshow
+      icon: collections
       value:
         _id: two-photo-grid
         grid_top_image:
@@ -24,16 +24,32 @@ _array_structures:
         grid_bottom_image:
         grid_bottom_image_alt_text:
         grid_bottom_image_caption_text:
-    - label: Horizontal Parallax
+    - label: Fullscreen Image One
       icon: image
       value:
-        _id: wide-parallax
-        wide_image:
-        wide_image_title:
-        wide_image_alt_text:
-        wide_image_caption_text:
+        _id: fullscreen-one
+        first_fullscreen_image:
+        first_fullscreen_image_title:
+        first_fullscreen_image_alt_text:
+        first_fullscreen_image_caption_text:
+    - label: Fullscreen Image Two
+      icon: image
+      value:
+        _id: fullscreen-two
+        second_fullscreen_image:
+        second_fullscreen_image_title:
+        second_fullscreen_image_alt_text:
+        second_fullscreen_image_caption_text:
+    - label: Fullscreen Image Three
+      icon: image
+      value:
+        _id: fullscreen-three
+        third_fullscreen_image:
+        third_fullscreen_image_title:
+        third_fullscreen_image_alt_text:
+        third_fullscreen_image_caption_text:
     - label: Hexagon Gallery
-      icon: slideshow
+      icon: collections
       value:
         _id: hexagon-gallery
         hex_one_image:
@@ -44,6 +60,12 @@ _array_structures:
         hex_three_alt_text:
         hex_four_image:
         hex_four_alt_text:
+        hex_five_image:
+        hex_five_alt_text:
+        hex_six_image:
+        hex_six_alt_text:
+        hex_seven_image:
+        hex_seven_alt_text:
     - label: Beta Section
       icon: text
       value:
@@ -51,3 +73,15 @@ _array_structures:
         article_writer:
         article_photographer:
         beta_text:
+    - label: Image with Text
+      icon: text
+      value:
+        _id: image-with-paragraph
+        paragraph_image:
+        section_text:
+    - label: Fullscreen Image with Paragraph
+      icon: text
+      value:
+        _id: 2-column-paragraph-and-image
+        inset_image:
+        column_text:
