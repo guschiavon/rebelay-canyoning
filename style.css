@@ -240,10 +240,13 @@ footer {
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
 .padded-10-8  {  padding: 10% 8%     }
+.padded-10-10  {  padding: 10% 10%     }
 .padded-heavy { padding: 7% 15%;     }
 .padded-top-bottom-4 { padding: 4rem 0; }
+.padded-
 
-.flex-center {
+.flex-center,
+.flex-center.hexagon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +464,7 @@ footer {
 /* hexagon gallery */
 .beehive-gallery a { padding: 1rem; }
 
-.hexagon  {
+.hexagon {
   height: 200px;
   width: 180px;
   background-color: #2f2f2f;
@@ -473,6 +476,13 @@ footer {
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+    transition: .2s all;
+}
+
+.hexagon:hover img,
+.hexagon:focus img {
+    transform: scale(1.1);
+    transition: .2s all;
 }
 
 .hexagon-row-2,
@@ -502,7 +512,7 @@ footer {
   }
 
   .hexagon-row-2,
-  .hexagon-row-3 { margin-top: 0; }
+  .hexagon-row-3 { margin-top: -4rem; }
 }
 
 @media (min-width: 768px) {
