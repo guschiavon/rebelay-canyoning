@@ -18,7 +18,7 @@ page_blocks:
   </div>
 </section>
 
-{% for block in page.page_blocks %}
+<!-- {% for block in page.page_blocks %}
   {% case block._id %}
     {% when 'two-photo-grid' %}
       {% include two-photo-grid.html block=block %}
@@ -37,7 +37,8 @@ page_blocks:
     {% when '2-column-paragraph-and-image' %}
       {% include 2-column-paragraph-and-image.html block=block %}
   {% endcase %}
-{% endfor %}
+{% endfor %} -->
+
 <section class="padded-lg center bg-highlight beehive-gallery">
   <div class="grid-center-wrap">
     <a href="#">
@@ -86,10 +87,10 @@ page_blocks:
 
 
 <!-- Canyon key facts section -->
-<section class="canyon-info bg-light half-height">
+<section class="bg-light">
   <div class="grid-reverse">
-    <div class="col-12_sm-12_md-6_lg-6 map">
-      {{ page.map_url }}
+    <div class="col-12_sm-12_md-6_lg-6">
+      <iframe src="{{ page.map_url }}" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
     <div class="col-12_sm-12_md-6_lg-6 padded-lg">
       <h4>

@@ -172,10 +172,9 @@ dl dd { margin-bottom: .5rem; }
 .fab,
 .share-icons,
 .share-icons .fas {
-  font-size: 3rem;
+  font-size: 2.2rem;
   opacity: .7;
   padding: .5rem;
-  margin: auto;
 }
 
 .fa-question-circle {
@@ -477,7 +476,7 @@ footer {
 
 /* Media Queries for screen sizes */
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
 
   .fa-bars { font-size: 2.5rem; }
 
