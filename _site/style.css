@@ -362,17 +362,18 @@ footer {
 .caption-large,
 .caption-wide {
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
+  width: 100%
 }
 
-.caption-large { max-width: 70%; }
+/* .caption-large { width: 100%; }
 
-.caption-wide  { max-width: 100%; }
+.caption-wide  { max-width: 100%; } */
 
 .caption-small {
   font-style: italic;
   font-size: .8rem;
-  padding: 1rem .5rem;
+  padding: 1rem 2rem;
 }
 
 .nav-bar,
@@ -440,6 +441,13 @@ footer {
   background-color: #2f2f2f;
   max-width: 60%;
   font-style: italic;
+}
+
+/* photo "frame" with elements */
+
+.frame svg {
+  position: absolute;
+  z-index: 999;
 }
 
 /* hexagon SVG positioning */

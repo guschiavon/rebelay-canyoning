@@ -64,8 +64,6 @@ _array_structures:
         hex_five_alt_text:
         hex_six_image:
         hex_six_alt_text:
-        hex_seven_image:
-        hex_seven_alt_text:
     - label: Image with Text
       icon: text
       value:
