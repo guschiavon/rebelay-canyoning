@@ -459,11 +459,17 @@ footer {
   background-color: #2f2f2f;
   display: inline-block;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  overflow: hidden;
+}
+
+.hexagon img {
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hexagon-row-2,
-.hexagon-row-3 { margin-top: -4.5rem; }
+.hexagon-row-3 { margin-top: -4rem; }
 
 .fill-gray { background-color: #EEEEEE; }
 .fill-yellow { background-color: #F7BE00; }
