@@ -240,10 +240,9 @@ footer {
 .padded-sm    {  padding: 3% 5%;     }
 .padded-lg    {  padding: 3% 8%;     }
 .padded-10-8  {  padding: 10% 8%     }
-.padded-10-10  {  padding: 10% 10%     }
-.padded-heavy { padding: 7% 15%;     }
+.padded-10-10 {  padding: 10% 10%    }
+.padded-heavy {  padding: 7% 15%;    }
 .padded-top-bottom-4 { padding: 4rem 0; }
-.padded-
 
 .flex-center,
 .flex-center.hexagon {
@@ -380,15 +379,30 @@ footer {
 }
 
 .nav-bar,
-.image-container { position: relative; }
+.hexagon-bg-parent {
+  position: relative;
+  z-index: 1;
+}
 
 .image-container img { width: 100%; }
+
+.small-image-container img {
+  width: 500px;
+  height: auto;
+  float: left;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+
+/* This is NAV bar stuff */
 
 .nav-bar .logo {
   position: absolute;
   left: 5%;
   padding: 1rem;
 }
+
 .nav-bar .burger {
   position: absolute;
   right: 5%;
@@ -455,10 +469,11 @@ footer {
 
 /* hexagon SVG positioning */
 
-.image-container svg {
+.hexagon-bg svg {
   position: absolute;
-  top: 0;
-  left: -10%;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
 }
 
 /* hexagon gallery */
