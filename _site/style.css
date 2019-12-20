@@ -297,14 +297,23 @@ footer {
   transition: .3s all;
 }
 
+/* SVG Dividers */
 .svg-divider-top {
   width: 100%;
   height: 150px;
 }
-
-.triangle-divider {
-  fill: #dcdcdc;
+.triangle-divider-top,
+.triangle-divider-bottom {
+  fill: #e5e5e5;
+  background-color: #707070;
 }
+
+.triangle-divider-top {
+  margin-top: -2.5rem;
+  margin-bottom: -.3rem;
+}
+.triangle-divider-bottom { margin-bottom: -2.5rem; }
+
 
 /* This is to make the headlines zoom on hover */
 
