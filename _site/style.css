@@ -174,11 +174,18 @@ dl dd { margin-bottom: .5rem; }
 .fa-bars { font-size: 2rem; }
 
 .fab,
-.share-icons,
-.share-icons .fas {
+.share-icons
+ {
   font-size: 2.2rem;
   opacity: .7;
   padding: .5rem;
+}
+
+.fab:hover,
+.fab:focus
+ {
+  color: #F7BE00;
+  transition: .3s all;
 }
 
 .fa-question-circle {
@@ -512,14 +519,9 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.hexagon-bg-contact svg {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   z-index: -1;
 }
+
 
 /* hexagon gallery */
 .beehive-gallery a { padding: 1rem; }
