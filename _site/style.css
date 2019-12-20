@@ -76,7 +76,10 @@ h3,
 span,
 label { color: #F7BE00; }
 
-.about h3 { font-size: 1.2rem; }
+.about h3 {
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
 
 .bg-highlight span { color: #2f2f2f; }
 
@@ -618,7 +621,7 @@ footer {
   nav a,
   .logo h3 { font-size: 1.4rem; }
 
-  .about h3 {font-size: 2rem;}
+  .about h3 {font-size: 1.6rem;}
 
   .about .quarter-height { min-height: 100vh; }
 }
