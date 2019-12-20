@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: 'Noto Serif', serif;
-  background-color: #2F2F2F;
+  background-color: #707070;
   color: #E5E5E5;
   text-decoration: none;
   height: 100%;
@@ -254,6 +254,11 @@ footer {
 }
 
 .bg-dark {
+  background-color: #2f2f2f;
+  color: #e5e5e5;
+}
+
+.bg-mid-gray {
   background-color: #707070;
   color: #e5e5e5;
 }
