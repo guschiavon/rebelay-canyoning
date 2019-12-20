@@ -52,11 +52,10 @@ h1,
 h2,
 h4 { font-family: 'DM Serif Display', serif; }
 
-h1 { font-size: 2.5rem; }
+h1,
+h2 { font-size: 2.5rem; }
 
-h2 { font-size: 4rem; }
-
-h3 { font-size: .73rem; }
+h3 { font-size: .7rem; }
 
 h4 {
   font-size: 1.7rem;
@@ -69,7 +68,6 @@ h4 {
   font-family: "Frontage-Regular";
   font-size: .5rem;
   padding: .5rem;
-  margin-right: 1rem;
   border: 1px solid;
   color: #F7BE00;
 }
@@ -349,7 +347,6 @@ footer {
   transform: translateZ(-1px) scale(2);
   display: block;
   background-size: cover;
-  min-height: 100vh;
 }
 
 .bg-image,
@@ -376,6 +373,7 @@ footer {
   font-style: italic;
   font-size: .8rem;
   padding: 1rem 2rem;
+  text-align: justify;
 }
 
 .nav-bar,
@@ -511,6 +509,8 @@ footer {
 
 @media (min-width: 320px) {
 
+  .margin-top-negative-4 { margin-top: 0; }
+
   .fa-bars { font-size: 2.5rem; }
 
   .hexagon  {
@@ -525,6 +525,8 @@ footer {
     width: 360px;
     margin-top: -4rem;
   }
+
+  .mobile-hide { display: none;}
 
   .hexagon-row-2,
   .hexagon-row-3 { margin-top: -4rem; }
@@ -552,7 +554,7 @@ footer {
 
   h1 { font-size: 4rem;    }
 
-  h2 { font-size: 7rem;    }
+  h2 { font-size: 5.5rem;    }
 
   h3 { font-size: 1.16rem; }
 
