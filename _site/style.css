@@ -320,14 +320,14 @@ footer {
 .triangle-divider-top,
 .triangle-divider-bottom {
   fill: #e5e5e5;
-  background-color: #707070;
+  background-color: inherit;
 }
 
 .triangle-divider-top {
-  margin-top: -2.5rem;
+  margin-top: -2rem;
   margin-bottom: -.3rem;
 }
-.triangle-divider-bottom { margin-bottom: -2.5rem; }
+/* .triangle-divider-bottom { margin-bottom: -2.5rem; } */
 
 
 /* This is to make the headlines zoom on hover */
