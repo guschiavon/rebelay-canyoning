@@ -531,6 +531,7 @@ footer {
   z-index: -1;
 }
 /* hexagon gallery */
+
 .beehive-gallery a { padding: 0; }
 
 .hexagon {
@@ -561,7 +562,6 @@ p.gallery-info {font-size: .6rem;}
 
 .fill-gray { background-color: #EEEEEE; }
 .fill-yellow { background-color: #F7BE00; }
-
 
 /* Media Queries for screen sizes */
 
