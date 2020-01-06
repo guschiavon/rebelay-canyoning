@@ -157,6 +157,8 @@
 
     <script>
 
+  $( document ).ready(function() {
+
     console.log('hello from js');
 
     $(".burger").click(function(){
@@ -168,29 +170,27 @@
       console.log("burger clicked");
 
     });
+  });
 
     </script>
 
 <!-- This is the Lightbox JS -->
   <script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js"></script>
 
-  <!-- Specific script to correct Lightbox positioning upon click -->
+  <!-- Specific script to correct Lightbox positioning upon click; the "document" part of the script makes the script run ONLY AFTER the page is loaded -->
   <script type="text/javascript">
+  $( document ).ready(function() {
+    $(".beehive-gallery a").click(function(){
+      $("body").addClass("lightbox-active");
+    });
 
-  $(".beehive-gallery a").click(function(){
-    $("body").addClass("lightbox-active");
-  }
-);
+    $(".lb-close, #lightboxOverlay").click(function(){
+      $("body").removeClass("lightbox-active");
+      console.log("i saw that");
+    });
+  });
 
-$(".lb-close, #lightboxOverlay").click(function(){
-  $(".lightbox-active").removeClass("lightbox-active");
-}
-);
-
-
-  </script>
-
-
+</script>
 
     <!-- Start of HubSpot Embed Code -->
   <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script> -->
