@@ -26,6 +26,9 @@
     <!-- Load local copy of jQuery from the js folder -->
     <script src="/js/jquery-3.4.1.min.js"></script>
 
+    <!-- This is the Lightbox plugin -->
+    <link href="/plugins/lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
+
     <!-- master CSS file; keep it at end of HEAD -->
     <link rel="stylesheet" href="/style.css">
 
@@ -202,29 +205,29 @@
 
 <section class="padded-lg center bg-highlight beehive-gallery">
   <div class="grid-center-wrap">
-    <a href="#">
+    <a href="/assets/images/placeholder_008.jpg" data-lightbox="image-1" data-title="My caption">
       <div class="hexagon">
         <img src="/assets/images/placeholder_008.jpg" alt="">
       </div>
     </a>
-    <a href="#">
+    <a href="/assets/images/placeholder_009.jpg" data-lightbox="image-1" data-title="My caption">
       <div class="hexagon">
         <img src="/assets/images/placeholder_009.jpg" alt="">
       </div>
     </a>
   </div>
   <div class="grid-center-wrap hexagon-row-2">
-    <a href="#">
+    <a href="assets/images/placeholder_010.jpg" data-lightbox="image-1" data-title="My caption">
       <div class="hexagon">
         <img src="/assets/images/placeholder_010.jpg" alt="">
       </div>
     </a>
-    <a href="#">
+    <a href="assets/images/placeholder_011.jpg" data-lightbox="image-1">
       <div class="hexagon">
         <img src="/assets/images/placeholder_011.jpg" alt="">
       </div>
     </a>
-    <a href="#">
+    <a href="assets/images/placeholder_012.jpg" data-lightbox="image-1">
       <div class="hexagon">
         <img src="/assets/images/placeholder_012.jpg" alt="">
       </div>
@@ -238,7 +241,7 @@
         </p>
       </div>
     </a>
-    <a href="#">
+    <a href="/assets/images/placeholder_013.jpg" data-lightbox="image-1">
       <div class="hexagon">
         <img src="/assets/images/placeholder_013.jpg" alt="">
       </div>
@@ -304,7 +307,7 @@
       </section>
     </footer>
 
-    <!-- jQuery script -->
+    <!-- jQuery burger script -->
 
     <script>
 
@@ -321,63 +324,18 @@
     });
 
     </script>
-    <script>
-    // Initialize here and run showSlide() to give your lightbox a default state.
-    console.log('lightbox running');
 
-    let slideIndex = 1;
-    showSlide(slideIndex);
+<!-- This is the Lightbox JS -->
+  <script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js"></script>
 
-    // You are providing the functionality for your clickable content, which is
-    // your previews, dots, controls and the close button.
-
-    function openLightbox() {
-    document.getElementById('Lightbox').style.display = 'block';
-    }
-
-    function closeLightbox() {
-    document.getElementById('Lightbox').style.display = 'none';
-    };
-
-    // Note that you are assigning new values here to our slidIndex.
-
-    function changeSlide(n) {
-    showSlide(slideIndex += n);
-    };
-
-    function toSlide(n) {
-    showSlide(slideIndex = n);
-    };
-
-    // This is your logic for the light box. It will decide which slide to show
-    // and which dot is active.
-
-    function showSlide(n) {
-    const slides = document.getElementsByClassName('slide');
-    let modalPreviews = document.getElementsByClassName('modal-preview');
-
-    if (n > slides.length) {
-      slideIndex = 1;
-    };
-
-    if (n < 1) {
-      slideIndex = slides.length;
-    };
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    };
-
-    for (let i = 0; i < modalPreviews.length; i++) {
-      modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-    };
-
-    slides[slideIndex - 1].style.display = 'block';
-    modalPreviews[slideIndex - 1].className += ' active';
-    };
-  </script>
+<!-- Prevents the Lightbox from scrolling the page when activated -->
+  <script>
+    lightbox.option({
+      'disableScrolling': false
+    })
+</script>
     <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script>
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script> -->
   <!-- End of HubSpot Embed Code -->
   </body>
 </html>
