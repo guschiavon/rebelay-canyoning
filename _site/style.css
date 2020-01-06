@@ -327,7 +327,6 @@ footer {
   margin-top: -2rem;
   margin-bottom: -.3rem;
 }
-/* .triangle-divider-bottom { margin-bottom: -2.5rem; } */
 
 
 /* This is to make the headlines zoom on hover */
@@ -390,6 +389,10 @@ footer {
   background-size: cover;
   background-position: center;
 }
+
+/* Specific class for enabling the Lightbox feature and keep it in place on the viewport */
+
+.lightbox-active { perspective: none; }
 
 /* Pseudo-opacity but works fine! */
 .opacity { box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); }

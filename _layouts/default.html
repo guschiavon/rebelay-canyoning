@@ -153,12 +153,24 @@
 <!-- This is the Lightbox JS -->
   <script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js"></script>
 
-<!-- Prevents the Lightbox from scrolling the page when activated -->
-  <script>
-    lightbox.option({
-      'disableScrolling': false
-    })
-</script>
+  <!-- Specific script to correct Lightbox positioning upon click -->
+  <script type="text/javascript">
+
+  $(".beehive-gallery a").click(function(){
+    $("body").addClass("lightbox-active");
+  }
+);
+
+$(".lb-close, #lightboxOverlay").click(function(){
+  $(".lightbox-active").removeClass("lightbox-active");
+}
+);
+
+
+  </script>
+
+
+
     <!-- Start of HubSpot Embed Code -->
   <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script> -->
   <!-- End of HubSpot Embed Code -->
