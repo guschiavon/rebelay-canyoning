@@ -4,50 +4,53 @@
 
 {% for item in page.blocks %}
 {% if item._id == "hexagon-gallery" %}
+
+
 <section class="padded-lg center bg-highlight beehive-gallery">
-  <div class="grid-center">
-    <a href="#">
+  <div class="grid-center-wrap">
+    <a href="{{item.hex_one_image}}" data-lightbox="image-1">
       <div class="hexagon">
         <img src="{{ item.hex_one_image }}" alt="{{ hex_one_alt_text }}">
       </div>
     </a>
-    <a href="#">
+    <a href="{{item.hex_two_image}}" data-lightbox="image-1">
       <div class="hexagon">
-        <img src="{{ item.hex_two_image }}" alt="{{ hex_two_alt_text }}">
+        <img src="{{item.hex_two_image}}" alt="{{ hex_two_alt_text }}">
       </div>
     </a>
   </div>
-  <div class="grid-center hexagon-row-2">
-    <a href="#">
+  <div class="grid-center-wrap hexagon-row-2">
+    <a href="{{item.hex_three_image}}" data-lightbox="image-1">
       <div class="hexagon">
-        <img src="{{ item.hex_three_image }}" alt="{{ hex_three_alt_text }}">
+        <img src="{{item.hex_three_image}}" alt="{{ hex_three_alt_text }}">
       </div>
     </a>
-    <a href="#">
+    <a href="{{item.hex_four_image}}" data-lightbox="image-1">
       <div class="hexagon">
-        <img src="{{ item.hex_four_image }}" alt="{{ hex_four_alt_text }}">
+        <img src="{{item.hex_four_image}}" alt="{{ hex_four_alt_text }}">
       </div>
     </a>
-    <a href="#">
+    <a href="{{item.hex_five_image}}" data-lightbox="image-1">
       <div class="hexagon">
-        <img src="{{ item.hex_five_image }}" alt="{{ hex_five_alt_text }}">
+        <img src="{{item.hex_five_image}}" alt="{{ hex_five_alt_text }}">
       </div>
     </a>
   </div>
-  <div class="grid-center hexagon-row-3">
+  <div class="grid-center-wrap hexagon-row-3">
     <a href="#">
       <div class="hexagon flex-center">
-        <h3 class="gallery-info">
+        <p class="gallery-info">
           Click on the image to see it fullscreen
-        </h3>
+        </p>
       </div>
     </a>
-    <a href="#">
+    <a href="{{item.hex_six_image}}" data-lightbox="image-1">
       <div class="hexagon">
-        <img src="{{ item.hex_seven_image }}" alt="{{ hex_seven_alt_text }}">
+        <img src="{{item.hex_six_image}}" alt="{{ hex_six_alt_text }}">
       </div>
     </a>
   </div>
 </section>
+
 {% endif %}
 {% endfor %}

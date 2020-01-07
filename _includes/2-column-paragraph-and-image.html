@@ -1,17 +1,17 @@
 
 {% for item in page.page_blocks %}
 {% if item._id == "2-column-paragraph-and-image" %}
-<section class="bg-highlight">
-  <div class="padded-heavy grid">
-    <div class="col-6 padded-lg image-container">
-      <img src="{{ item.inset_image }}" alt="">
-      <svg xmlns="http://www.w3.org/2000/svg" width="242" height="242" viewBox="0 0 258 255"><g transform="translate(-201 -5379)"><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(313 5443)" fill="#d1d1d1" opacity="0.768"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(201 5508)" fill="#ffd95c" opacity="0.768"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(201 5379)" fill="#d1d1d1" opacity="0.768"/></g></svg>
-    </div>
-    <div class="col-6 padded-lg">
-      <p>
-        {{ item.column_text }}
-      </p>
-    </div>
+<section class="bg-highlight hexagon-bg-parent">
+  <div class="padded-10-8">
+    <p class="small-image-container right">
+      <img src="{{item.inset_image}}" alt="{{ item.inset_image_alt_text }}">
+      {{ item.paragraph_content_text_area }}
+    </p>
+  </div>
+  <div class="hexagon-bg-block">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100vw" height="100vh" viewBox="0 0 1500 500">
+        <path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 48)" fill="#d1d1d1" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(114 114)" fill="#ffd95c" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 180)" fill="#d1d1d1" opacity="0.3"/>
+    </svg>
   </div>
 </section>
 {% endif %}

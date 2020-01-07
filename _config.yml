@@ -70,10 +70,12 @@ _array_structures:
         _id: image-with-paragraph
         paragraph_image:
         section_text:
+        paragraph_image_alt_text:
     - label: Fullscreen Image with Paragraph
       icon: text
       value:
         _id: 2-column-paragraph-and-image
         inset_image:
-        column_text:
+        inset_image_alt_text:
+        paragraph_content_text_area:
 uploads_dir: "/assets/images/:title"

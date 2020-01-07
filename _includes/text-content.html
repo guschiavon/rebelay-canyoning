@@ -1,0 +1,17 @@
+{% for item in page.page_blocks %}
+  {% if item._id == "copy-content-1" %}
+
+<svg viewBox="0 0 3000 150" class="triangle-divider-top">
+  <polygon class="svg-triangle-top" points="0,150 1500,1 3000,150">
+  </svg>
+<section class="bg-light padded-10-10">
+    <p>
+      {{item.copy-content-1_text_area}}
+    </p>
+</section
+><svg class="svg-bg-light svg-fill-dark" viewBox="0 0 3000 150" class="triangle-divider-bottom">
+  <polygon class="svg-triangle-bottom" points="0,0 0,150 3000,1500 3000,0 1500,150">
+</svg>
+
+{% endif %}
+{% endfor %}
