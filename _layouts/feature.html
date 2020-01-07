@@ -27,7 +27,7 @@ page_blocks:
 
 
 <!-- This is the hexagon mask section with a quote -->
-<section class="third-height bg-highlight flex-center">
+<!-- <section class="third-height bg-highlight flex-center">
   <div class="hexagon-section">
     <div class="hexagon-quote center padded-lg">
       <p>
@@ -35,11 +35,12 @@ page_blocks:
       </p>
     </div>
   </div>
-</section>
+</section> -->
 
 
 {% for block in page.page_blocks %}
   {% case block._id %}
+
     {% when 'two-photo-grid' %}
       {% include two-photo-grid.html block=block %}
     {% when 'vertical-parallax' %}
@@ -56,5 +57,14 @@ page_blocks:
       {% include image-with-paragraph.html block=block %}
     {% when '2-column-paragraph-and-image' %}
       {% include 2-column-paragraph-and-image.html block=block %}
+    {% when 'copy-content-1' %}
+      {% include text-content-1.html block=block %}
+    {% when 'copy-content-2' %}
+      {% include text-content-2.html block=block %}
+    {% when 'hexagon-gallery' %}
+      {% include hexagon-gallery.html block=block %}
+    {% when 'full-screen-parallax' %}
+      {% include full-screen-parallax.html block=block %}
+
   {% endcase %}
 {% endfor %}
