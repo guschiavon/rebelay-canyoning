@@ -1,0 +1,15 @@
+{% for item in page.page_blocks %}
+  {% if item._id == "text-content-yellow" %}
+
+    <section class="bg-highlight padded-10-8">
+      <p>
+        {{item.text_content_paragraph_1}}
+      </p>
+      <br>
+      <p>
+        {{item.text_content_paragraph_2}}
+      </p>
+    </section>
+
+  {% endif %}
+{% endfor %}

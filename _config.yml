@@ -15,7 +15,7 @@ _array_structures:
       icon: text
       value:
         _id: copy-content-2
-        copy-content-2_text_area:      
+        copy-content-2_text_area:
     - label: Vertical Fullscreen Image
       icon: image
       value:
@@ -88,4 +88,10 @@ _array_structures:
         inset_image:
         inset_image_alt_text:
         paragraph_content_text_area:
+    - label: Text Content
+      icon: text
+      value:
+        _id: text-content-1
+        text_content_paragraph_1:
+        text_content_paragraph_2:
 uploads_dir: "/assets/images/:title"
