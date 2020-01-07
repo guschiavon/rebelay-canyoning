@@ -451,7 +451,7 @@ bottom: 0; }*/
 .image-container img { width: 100%; }
 
 .small-image-container img {
-  width: 500px;
+  width: 100vw;
   height: auto;
   float: left;
   padding-right: 3rem;
@@ -601,6 +601,7 @@ p.gallery-info {font-size: .6rem;}
     width: 100%;
 }
 
+
 @media (min-width: 768px) {
 
   h1,
@@ -636,6 +637,8 @@ p.gallery-info {font-size: .6rem;}
   .mobile-nav a { font-size: 1.4rem; }
 
   .button { padding: 1rem 3rem; }
+
+  .small-image-container img { width: 800px;}
 
 }
 
@@ -680,4 +683,6 @@ p.gallery-info {font-size: .6rem;}
   .about h3 {font-size: 1.6rem;}
 
   .about .quarter-height { min-height: 100vh; }
+
+  .small-image-container img { float: none;}
 }
