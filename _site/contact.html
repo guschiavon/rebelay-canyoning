@@ -14,6 +14,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
+    <!-- reCAPTCHA script call -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6LdSWM0UAAAAALNW8MImFwXlz2kbjKi3HH0PCrL4'
+          });
+        };
+    </script>
+
     <!-- for Media Queries to work -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -51,7 +62,7 @@
       <input type="email" name="email" placeholder="Enter your email">
       <label for="message"> Message </label>
       <textarea name="message" rows="8"> </textarea><br>
-      <input type="submit" value="Send Message" name="button" class="button">
+      <input type="submit" value="Send Message" name="button" class="button g-recaptcha" data-sitekey="6LdSWM0UAAAAALNW8MImFwXlz2kbjKi3HH0PCrL4" data-callback="onSubmit">
     </form>
   </div>
 
