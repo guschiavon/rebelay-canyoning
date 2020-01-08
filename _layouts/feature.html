@@ -3,8 +3,8 @@ layout: default
 latest: no
 page_blocks:
 ---
-
-<section class="bg-light">
+{{content}}
+<!-- <section class="bg-light">
   <div class="padded-heavy">
     <div class="article-info">
       <h3>
@@ -23,7 +23,7 @@ page_blocks:
       {{ content }}
     </div>
   </div>
-</section>
+</section> -->
 
 
 {% for block in page.page_blocks %}
@@ -50,7 +50,7 @@ page_blocks:
     {% when 'copy-content-2' %}
       {% include text-content-2.html block=block %}
     {% when 'text-content-yellow' %}
-      {% include text-content-yellow.html block=block %}  
+      {% include text-content-yellow.html block=block %}
     {% when 'hexagon-gallery' %}
       {% include hexagon-gallery.html block=block %}
     {% when 'full-screen-parallax' %}
