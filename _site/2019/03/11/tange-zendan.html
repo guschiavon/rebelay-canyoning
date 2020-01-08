@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
 
 
+
     <!-- Google Fonts API -->
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet">
 
@@ -154,7 +155,7 @@
           </p>
         </div>
         <form method="post" action="http://rebelay.com/success.html" id="subscribe-form">
-          <input type="email" name="email" placeholder="Enter your email"><input type="submit" value="Subscribe" name="button" class="form-button">
+          <input type="email" name="email" placeholder="Enter your email"><input type="submit" value="Subscribe" name="button" class="form-button g-recaptcha" data-sitekey="6LdSWM0UAAAAALNW8MImFwXlz2kbjKi3HH0PCrL4" data-callback="onSubmit">
         </form>
         <br>
         <div>
@@ -211,6 +212,17 @@
     <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script>
 <!-- End of HubSport Embed Code -->
+
+<!-- reCAPTCHA script call -->
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+
+ <!-- End of reCAPTCHA script -->
 
   </body>
 </html>
