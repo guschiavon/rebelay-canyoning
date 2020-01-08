@@ -88,10 +88,22 @@ _array_structures:
         inset_image:
         inset_image_alt_text:
         paragraph_content_text_area:
-    - label: Text Content
+    - label: Text Content One
       icon: text
       value:
-        _id: text-content-1
+        _id: copy-content-1
+        content_1_text_area:
+        content_2_text_area:
+    - label: Text Content Two
+      icon: text
+      value:
+        _id: copy-content-2
+        content_1_text_area:
+        content_2_text_area:
+    - label: Text Content Three
+      icon: text
+      value:
+        _id: text-content-yellow
         text_content_paragraph_1:
-        text_content_paragraph_2:
+        text_content_paragraph_1:               
 uploads_dir: "/assets/images/:title"

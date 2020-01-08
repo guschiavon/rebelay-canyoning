@@ -26,18 +26,6 @@ page_blocks:
 </section>
 
 
-<!-- This is the hexagon mask section with a quote -->
-<!-- <section class="third-height bg-highlight flex-center">
-  <div class="hexagon-section">
-    <div class="hexagon-quote center padded-lg">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-  </div>
-</section> -->
-
-
 {% for block in page.page_blocks %}
   {% case block._id %}
 
@@ -61,6 +49,8 @@ page_blocks:
       {% include text-content-1.html block=block %}
     {% when 'copy-content-2' %}
       {% include text-content-2.html block=block %}
+    {% when 'text-content-yellow' %}
+      {% include text-content-yellow.html block=block %}  
     {% when 'hexagon-gallery' %}
       {% include hexagon-gallery.html block=block %}
     {% when 'full-screen-parallax' %}
