@@ -255,6 +255,8 @@ footer {
 .padded-heavy {  padding: 7% 15%;    }
 .padded-top-bottom-4 { padding: 4rem 0; }
 
+.margin-bottom-neg-1 {margin-bottom: -1rem;}
+
 .flex-center,
 .flex-center.hexagon {
   display: flex;
@@ -329,12 +331,12 @@ svg {
   background-color: rgba(0,0,0,0);
 }
 
-.svg-bg-light{background-color:  #e5e5e5;}
-.svg-bg-dark{background-color:  #707070;}
-.svg-bg-highlight{background-color:  #F7BE00;}
-.svg-fill-light{ fill:#e5e5e5;}
-.svg-fill-dark{ fill:#707070;}
-.svg-fill-highlight{ fill:#F7BE00;}
+.svg-bg-light {background-color:  #e5e5e5;}
+.svg-bg-dark {background-color:  #707070;}
+.svg-bg-highlight {background-color:  #F7BE00;}
+.svg-fill-light { fill:#e5e5e5;}
+.svg-fill-dark { fill:#707070;}
+.svg-fill-highlight { fill:#F7BE00;}
 
 .triangle-divider-top {
   margin-top: -2rem;

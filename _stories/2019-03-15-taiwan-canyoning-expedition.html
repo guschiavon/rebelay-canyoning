@@ -154,13 +154,13 @@ page_blocks:
         <path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 48)" fill="#d1d1d1" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(114 114)" fill="#ffd95c" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 180)" fill="#d1d1d1" opacity="0.3"/>
     </svg>
   </div>
+  <svg viewBox="0 0 3000 150" class="triangle-divider-top">
+    <polygon class="svg-triangle-top" points="0,150 1500,1 3000,150">
+    </svg>
 </section>
 
 <!-- text section -->
 <section class="bg-light">
-  <svg viewBox="0 0 3000 150" class="triangle-divider-top">
-    <polygon class="svg-triangle-top svg-fill-highlight" points="0,150 1500,1 3000,150">
-    </svg>
     <div class="padded-lg">
       <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -174,13 +174,13 @@ page_blocks:
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <svg class="svg-bg-light svg-fill-dark" viewBox="0 0 3000 150" class="triangle-divider-bottom">
-      <polygon class="svg-triangle-bottom svg-fill-highlight" points="0,0 0,150 3000,1500 3000,0 1500,150">
-      </svg>
 </section>
 
 
 <!-- hexagon gallery -->
+<svg class="svg-bg-light svg-fill-dark margin-bottom-neg-1" viewBox="0 0 3000 150" class="triangle-divider-bottom">
+  <polygon class="svg-triangle-bottom svg-fill-highlight" points="0,0 0,150 3000,1500 3000,0 1500,150">
+  </svg>
 <section class="padded-lg center bg-highlight beehive-gallery">
   <div class="grid-center-wrap">
     <a href="{{page.hex_one_image}}" data-lightbox="image-1">
@@ -274,3 +274,31 @@ page_blocks:
     </div>
   </div>
 </section>
+
+{% for author in site.authors %}
+{% if author.name == page.article_writer %}
+<section class="grid padded-lg">
+  <div class="col-6_sm-12 padded-lg flex-center">
+    <div class="hexagon">
+      <img src="{{author.profile-photo}}" alt="">
+    </div>
+  </div>
+  <div class="col-6_sm-12 padded-lg left">
+    <h3>
+      About the author
+    </h3>
+    <br>
+    <h4>
+      {{author.name}}
+    </h4>
+    <p class="editable">
+      {{author.bio}}
+    </p>
+    <a href="https://instagram.com/{{author.social_instagram}}"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/{{author.social_facebook}}"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://twitter.com/{{author.social_twitter}}"><i class="fab fa-twitter-square"></i></a>
+
+  </div>
+</section>
+{% endif %}
+{% endfor %}
