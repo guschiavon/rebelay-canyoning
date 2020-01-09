@@ -98,10 +98,9 @@ footer p { margin-bottom: 1.5rem; }
   margin-bottom: 1.5rem;
 }
 
-.main { border-bottom: 5px solid #F7BE00;
-}
+.main { border-bottom: 5px solid #F7BE00; }
 
-.main div { margin-top: 40vh;}
+.main div { margin-top: 40vh; }
 
 h3,
 nav a,
@@ -318,27 +317,18 @@ footer {
 svg {
   font-size: 0;
 }
-/* position: absolute;
-right: 0;
-left: 0;
-}
-
-.top{
-top:0;
-}
-.bottom{
-bottom: 0; }*/
-
 
 .svg-divider-top {
   width: 100%;
   height: 150px;
 }
+
 .triangle-divider-top,
 .triangle-divider-bottom {
   fill: #e5e5e5;
   background-color: rgba(0,0,0,0);
 }
+
 .svg-bg-light{background-color:  #e5e5e5;}
 .svg-bg-dark{background-color:  #707070;}
 .svg-bg-highlight{background-color:  #F7BE00;}
@@ -374,8 +364,7 @@ bottom: 0; }*/
 }
 
 .zoom-container:hover .zoom,
-.zoom-container:focus .zoom
- { transform: scale(1.1); }
+.zoom-container:focus .zoom { transform: scale(1.1); }
 
 .half-section-horizontal img {
   object-fit: cover;
@@ -432,10 +421,6 @@ bottom: 0; }*/
 
 .caption-half-screen { width: 50%; }
 
-/* .caption-large { width: 100%; }
-
-.caption-wide  { max-width: 100%; } */
-
 .caption-small {
   font-style: italic;
   font-size: .8rem;
@@ -449,7 +434,11 @@ bottom: 0; }*/
   z-index: 1;
 }
 
-.image-container img { width: 100%; }
+.image-container img {
+    width: auto;
+    height: 100%;
+    transform-origin: right;
+  }
 
 .small-image-container img {
   width: 100vw;
@@ -593,13 +582,12 @@ p.gallery-info {font-size: .6rem;}
 
 @media (min-width: 320px) {
 
-
   .fa-bars { font-size: 2.5rem; }
 
   .mobile-hide { display: none;}
 
-  .caption-half-screen {
-    width: 100%;
+  .caption-half-screen { width: 100%;}
+
 }
 
 
@@ -629,7 +617,8 @@ p.gallery-info {font-size: .6rem;}
 
   .hexagon  {
     height: 200px;
-    width: 180px; }
+    width: 180px;
+  }
 
   .margin-top-negative-4,
   .hexagon-row-2,
@@ -652,7 +641,7 @@ p.gallery-info {font-size: .6rem;}
 
   h1 { font-size: 4rem;    }
 
-  h2 { font-size: 5.5rem;    }
+  h2 { font-size: 5.5rem;  }
 
   h3 { font-size: 1.16rem; }
 
@@ -679,6 +668,7 @@ p.gallery-info {font-size: .6rem;}
   .margin-top-negative-4 { margin-top: -4rem; }
 
   .small-image-container img { float: left;}
+
 }
 
 @media (min-width: 1280px) {
@@ -692,4 +682,9 @@ p.gallery-info {font-size: .6rem;}
 
   .about .quarter-height { min-height: 100vh; }
 
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+  }
 }
