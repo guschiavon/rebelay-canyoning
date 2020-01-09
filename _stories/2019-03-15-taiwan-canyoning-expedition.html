@@ -9,6 +9,17 @@ article_number: 1
 article_writer: Gus Schiavon
 article_photographer: Gus Schiavon
 article_category: feature
+paragraph_image: /assets/images/taiwan-canyoning-expedition/canyoning-rebelay-001-malishan-18.jpg
+paragraph_image_alt_text: Some alt text here
+grid_top_image: /assets/images/taiwan-canyoning-expedition/canyoning-rebelay-001-malishan-1.jpg
+grid_top_image_alt_text: Some alt text here
+grid_bottom_image: /assets/images/taiwan-canyoning-expedition/canyoning-rebelay-001-malishan-2.jpg
+grid_bottom_image_alt_text: some alt text here
+first_fullscreen_image: /assets/images/taiwan-canyoning-expedition/canyoning-rebelay-001-malishan-8.jpg
+first_fullscreen_image_title: Vertical thrills
+first_fullscreen_image_alt_text: some alt text here
+inset_image: /assets/images/taiwan-canyoning-expedition/canyoning-rebelay-001-malishan-12.jpg
+inset_image_alt_text: Some alt text here
 location: Taiwan
 duration: 8 days
 rating: V6A7VI
@@ -41,16 +52,36 @@ page_blocks:
     </div>
   </div>
 </section>
+
+<!-- image with paragraph section -->
 <section class="bg-mid-gray grid frame">
   <div class="col-6_md-12-middle">
     <img src="{{page.paragraph_image}}" alt="{{page.paragraph_image_alt_text}}">
   </div>
   <div class="col-6_md-12-middle padded-10-8">
     <p class="editable">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </div>
 </section>
+
+<!-- plain text paragraph "text content 1" -->
+
+<svg viewBox="0 0 3000 150" class="triangle-divider-top"><polygon class="svg-triangle-top" points="0,150 1500,1 3000,150">
+</svg>
+<section class="bg-light padded-heavy">
+  <p class="editable">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <br>
+  <p class="editable">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</section>
+<svg class="svg-bg-light svg-fill-dark" viewBox="0 0 3000 150" class="triangle-divider-bottom"><polygon class="svg-triangle-bottom" points="0,0 0,150 3000,1500 3000,0 1500,150">
+</svg>
+
+<!-- two image grid with captions section -->
 <section class="bg-mid-gray">
   <div class="padded-lg">
     <div class="grid">
@@ -69,5 +100,38 @@ page_blocks:
         <img src="{{ page.grid_bottom_image }}" alt="{{ page.grid_bottom_image_alt_text }}">
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- wide parallax one -->
+
+<section class="photo-height">
+  <div class="image-container bg-image parallax">
+    <img src="{{ page.first_fullscreen_image }}" alt="{{ page.first_fullscreen_image_alt_text }}" />
+    <div class="caption-wide padded-lg">
+      <h3>
+        {{ page.first_fullscreen_image_title }}
+      </h3>
+      <p class="editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- yellow section with image and paragraph plus hexagon -->
+
+<section class="bg-highlight hexagon-bg-parent">
+  <div class="padded-10-8">
+    <p class="small-image-container right editable">
+      <img src="{{page.inset_image}}" alt="{{ page.inset_image_alt_text }}">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="hexagon-bg-block">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100vw" height="100vh" viewBox="0 0 1500 500">
+        <path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 48)" fill="#d1d1d1" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(114 114)" fill="#ffd95c" opacity="0.3"/><path d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(0 180)" fill="#d1d1d1" opacity="0.3"/>
+    </svg>
   </div>
 </section>
