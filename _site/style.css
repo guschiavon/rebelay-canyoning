@@ -454,7 +454,7 @@ bottom: 0; }*/
 .small-image-container img {
   width: 100vw;
   height: auto;
-  float: left;
+  float: none;
   padding-right: 3rem;
   padding-bottom: 2rem;
 }
@@ -678,7 +678,7 @@ p.gallery-info {font-size: .6rem;}
 
   .margin-top-negative-4 { margin-top: -4rem; }
 
-  .small-image-container img { float: none;}
+  .small-image-container img { float: left;}
 }
 
 @media (min-width: 1280px) {
