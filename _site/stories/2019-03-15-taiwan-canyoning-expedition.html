@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet">
 
     <!-- reCAPTCHA script call -->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
     <script type="text/javascript">
         var onloadCallback = function() {
@@ -40,7 +40,9 @@
             'sitekey' : '6LdSWM0UAAAAALNW8MImFwXlz2kbjKi3HH0PCrL4'
           });
         };
-    </script>
+    </script> -->
+
+
 
     <!-- FontAwesome script-->
     <script src="https://kit.fontawesome.com/b28a5faa19.js" crossorigin="anonymous"></script>
@@ -316,6 +318,9 @@
 
 <!-- text content -->
 <section class="bg-light">
+  <svg viewBox="0 0 3000 150" class="triangle-divider-top">
+    <polygon class="svg-triangle-top" points="0,150 1500,75 3000,150">
+  </svg>
   <div class="padded-lg">
     <p class="editable">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -392,7 +397,7 @@
             <a href="http://www.facebook.com/sharer.php?u=https://rebelay.com/stories/2019-03-15-taiwan-canyoning-expedition.html" rel="nofollow" target="_blank"><i class="fab fa-facebook-square"></i></a>
             <a href="https://twitter.com/intent/tweet?text=Malishan&url=http://localhost:4000/stories/2019-03-15-taiwan-canyoning-expedition.html&via=&related=" rel="nofollow"><i class="fab fa-twitter-square"></i></a>
             <a href="whatsapp://send?text=http://localhost:4000/stories/2019-03-15-taiwan-canyoning-expedition.html"><i class="fab fa-whatsapp-square"></i></a>
-            <a href="#"><i class="fab fa-snapchat-square"></i></a>
+            <!-- <a href="#"><i class="fab fa-snapchat-square"></i></a> -->
             <a href="mailto:?subject=Awesome canyoning article &body=Hey, have a look at this awesome canyoning story and photos from Rebelay.com: /stories/2019-03-15-taiwan-canyoning-expedition.html" target="_blank"><i class="fas fab fa-envelope-square"></i></a>
           </div>
         </div>
@@ -407,7 +412,7 @@
             Get notified via email when an article is published. No spam.
           </p>
         </div>
-        <form method="post" action="http://rebelay.com/success.html" id="subscribe-form">
+        <form method="post" action="https://rebelay.com/success.html" id="subscribe-form">
           <input type="email" name="email" placeholder="Enter your email"><input type="submit" value="Subscribe" name="button" class="form-button g-recaptcha" data-sitekey="6LdSWM0UAAAAALNW8MImFwXlz2kbjKi3HH0PCrL4" data-callback="onSubmit">
         </form>
         <br>
