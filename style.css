@@ -561,7 +561,10 @@ svg {
 .hexagon-row-2,
 .hexagon-row-3 { margin-top: -1.4rem; }
 
-p.gallery-info {font-size: .6rem;}
+p.gallery-info {
+  font-size: .6rem;
+  color: white;
+}
 
 .hexagon img {
     height: 100%;
