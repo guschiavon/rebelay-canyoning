@@ -76,3 +76,29 @@ page_blocks:
     </div>
   </div>
 </section>
+{% for author in site.authors %}
+{% if author.name == page.article_writer %}
+<section class="grid padded-lg">
+  <div class="col-6_sm-12 padded-lg flex-center">
+    <div class="hexagon">
+      <img src="{{author.profile-photo}}" alt="" />
+    </div>
+  </div>
+  <div class="col-6_sm-12 padded-lg left">
+    <h3>
+      About the author
+    </h3>
+    <h4>
+      {{author.name}}
+    </h4>
+    <p class="editable">
+      {{ author.bio }}
+    </p>
+    <a href="https://instagram.com/{{author.social_instagram}}"><i class="fab fa-instagram" target="_blank"></i></a>
+    <a href="https://facebook.com/{{author.social_facebook}}"><i class="fab fa-facebook-square" target="_blank"></i></a>
+    <a href="https://twitter.com/{{author.social_twitter}}"><i class="fab fa-twitter-square" target="_blank"></i></a>
+
+  </div>
+</section>
+{% endif %}
+{% endfor %}
