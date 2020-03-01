@@ -4,19 +4,8 @@ latest: no
 page_blocks:
 ---
 
-<section class="bg-mid-gray third-height">
-  <div class="padded-10-8 opening-paragraph">
-    <h3>
-      Photostory by {{ page.article_photographer }}
-    </h3>
-    <h2>
-      The beta<span>:</span>
-    </h2>
-    <div>
-      {{ content }}
-    </div>
-  </div>
-</section>
+{{content}}
+
 
 {% for block in page.page_blocks %}
   {% case block._id %}
@@ -95,9 +84,9 @@ page_blocks:
     <p class="editable">
       {{ author.bio }}
     </p>
-    <a href="https://instagram.com/{{author.social_instagram}}"><i class="fab fa-instagram" target="_blank"></i></a>
-    <a href="https://facebook.com/{{author.social_facebook}}"><i class="fab fa-facebook-square" target="_blank"></i></a>
-    <a href="https://twitter.com/{{author.social_twitter}}"><i class="fab fa-twitter-square" target="_blank"></i></a>
+    <a href="https://instagram.com/{{author.social_instagram}}" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/{{author.social_facebook}}" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://twitter.com/{{author.social_twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
 
   </div>
 </section>
