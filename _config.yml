@@ -107,5 +107,5 @@ _array_structures:
       value:
         _id: text-content-yellow
         text_content_paragraph_1:
-        text_content_paragraph_1:
+        text_content_paragraph_2:
 uploads_dir: "/assets/images/:title"
