@@ -7,7 +7,7 @@
     <div class="padded-lg">
       <div class="grid">
         <div class="col-7_xs-12">
-          <img src="{{item.grid_top_image}}" alt="{{ item.grid_top_image_alt_text }}">
+          <img data-src="{{item.grid_top_image}}" alt="{{ item.grid_top_image_alt_text }}" class="lazyload">
         </div>
         <p class="col-5_xs-12-middle caption-small right">
           {{ item.grid_top_image_caption_text }}
@@ -18,7 +18,7 @@
           {{ item.grid_bottom_image_caption_text }}
         </p>
         <div class="col-7_xs-12 margin-top-negative-4">
-          <img src="{{ item.grid_bottom_image }}" alt="{{ item.grid_bottom_image_alt_text }}">
+          <img data-src="{{ item.grid_bottom_image }}" alt="{{ item.grid_bottom_image_alt_text }}" class="lazyload">
         </div>
       </div>
     </div>

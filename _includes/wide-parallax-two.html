@@ -5,7 +5,7 @@
 
     <section class="photo-height">
       <div class="image-container bg-image parallax">
-        <img src="{{ item.second_fullscreen_image }}" alt="{{ item.second_fullscreen_image_alt_text }}" />
+        <img data-src="{{ item.second_fullscreen_image }}" alt="{{ item.second_fullscreen_image_alt_text }}" class="lazyload"/>
         <div class="caption-half-screen opacity padded-lg">
           <h3>
             {{ item.second_fullscreen_image_title }}
