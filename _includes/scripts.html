@@ -1,5 +1,5 @@
 <!-- FontAwesome script-->
-<script src="https://kit.fontawesome.com/b28a5faa19.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/b28a5faa19.js" crossorigin="anonymous" defer></script>
 
 <!-- Gridlex framework -->
 
@@ -28,22 +28,12 @@
 </script>
 
 <!-- This is the Lightbox JS -->
-  <script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js"></script>
+<script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js" defer></script>
 
-  <!-- Specific script to correct Lightbox positioning upon click; the "document" part of the script makes the script run ONLY AFTER the page is loaded -->
-  <script type="text/javascript">
-  $( document ).ready(function() {
-    $(".beehive-gallery a").click(function(){
-      $("body").addClass("lightbox-active");
-    });
+<!-- Specific script to correct Lightbox positioning upon click; the "document" part of the script makes the script run ONLY AFTER the page is loaded -->
+<script src="/js/lightbox.js" type="text/javascript" defer> </script>
 
-    $(".lb-close, #lightboxOverlay").click(function(){
-      $("body").removeClass("lightbox-active");
-      console.log("i saw that");
-    });
-  });
-
-</script>
+<!-- Lazyloading -->
 <script src="/js/lazysizes.min.js" async=""></script>
     <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script>
