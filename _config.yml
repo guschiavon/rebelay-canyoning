@@ -5,6 +5,10 @@ collections:
     output: true
   authors:
     output: true
+
+compress_html:
+  comments: all
+  
 page_blocks: []
 _array_structures:
   page_blocks:
