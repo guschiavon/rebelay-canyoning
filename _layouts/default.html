@@ -1,101 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155988547-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-155988547-1');
-    </script>
+  {% include head.html %}
 
-    <meta charset="utf-8" />
-
-    <!-- for Media Queries to work -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>
-      {{ page.title }}
-    </title>
-
-    <!-- This is the Favicon (Site icon) -->
-    <link rel="shortcut icon" href="/assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-
-<!-- For whatsapp share link preview -->
-    <meta property="og:title" content="{{page.title}}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Stories, Interviews and Tech Tips" />
-    <meta property="og:url" content="{{page.url}}" />
-    <meta property="og:image" content="{{page.banner_image}}" />
-    <meta property="fb:app_id" content="191879652005058" />
-
-    <!-- Google Fonts API -->
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Serif:400,400i,700&display=swap" rel="stylesheet" />
-
-
-    <!-- FontAwesome script-->
-    <script src="https://kit.fontawesome.com/b28a5faa19.js" crossorigin="anonymous"></script>
-
-    <!-- Gridlex framework -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-    <!-- Load local copy of jQuery from the js folder -->
-    <script src="/js/jquery-3.4.1.min.js"></script>
-
-    <!-- This is the Lightbox plugin -->
-    <link href="/plugins/lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
-
-    <!-- master CSS file; keep it at end of HEAD -->
-    <link rel="stylesheet" href="/style.css" />
-
-  </head>
   <body>
     <header>
-        <div class="nav-bar">
-          <div class="logo">
-            <a href="/">
-              <h1>
-                Re<span>:</span>belay
-              </h1>
-            </a>
-            <h3>
-              Pure canyoning
-            </h3>
-          </div>
-          <div class="right burger">
-            <i class="fas fa-bars"></i>
-          </div>
-          <div class="mobile-nav mobile-show">
-            <ul>
-              <li>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <a href="/stories-all"> Stories </a>
-              </li>
-              <!-- <li>
-                <a href="#"> Shop </a>
-              </li> -->
-              <li>
-                <a href="/contact"> Contact </a>
-              </li>
-            </ul>
-          </div>
-          <div class="desktop-nav right">
-            <nav>
-              <a href="/about"> About </a>
-              <a href="/stories-all"> Stories </a>
-              <!-- <a href="#"> Shop </a> -->
-              <a href="/contact"> Contact </a>
-            </nav>
-          </div>
-        </div>
+
+    {% include navbar.html%}
 
     {% if page.latest == true %}
       {% include header-latest.html %}
@@ -106,93 +17,27 @@
     {% endif %}
 
     </header>
+
       {{content}}
+
     <footer>
 
       <section class="half-height center padded-sm bg-dark">
 
         {% if page._share_icons == true %}
 
-        <div class="center">
-          <h4>
-            Inspired? <span>Share now:</span>
-          </h4>
-          <div class="center share-icons">
-            <a href="http://www.facebook.com/sharer.php?u=https://rebelay.com{{page.url}}" rel="nofollow" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://rebelay.com{{ page.url }}&via=@RebelayCanyon" target="_blank" rel="nofollow"><i class="fab fa-twitter-square"></i></a>
-            <a href="whatsapp://send?text=https://rebelay.com{{page.url}}"><i class="fab fa-whatsapp-square"></i></a>
-            <a href="mailto:?subject=Awesome canyoning article &body=Hey, have a look at this awesome canyoning story and photos from Rebelay.com: https://rebelay.com{{page.url}}" target="_blank"><i class="fas fab fa-envelope-square"></i></a>
-          </div>
-        </div>
+        {% include share-icons.html %}
 
         {% endif %}
 
-        <div>
-          <h4>
-            Fresh from the canyon<span>.</span>
-          </h4>
-          <p class="editable">
-            Get notified via email when an article is published. No spam.
-          </p>
-        </div>
-        <form method="get" action="/success" id="subscribe-form">
-          <input type="email" name="email" placeholder="Enter your email" /><input type="submit" value="Subscribe" name="button" class="form-button" />
-        </form>
-        <br />
-        <div>
-          <h4>
-            Re<span>:</span>belay<span>.</span>com
-          </h4>
-          <div class="social-icons center">
-            <a href="https://facebook.com/rebelaycanyon" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://instagram.com/rebelay.canyoning" target="_blank"> <i class="fab fa-instagram"></i> </a>
-          </div>
-        </div>
+        {% include newsletter-cta.html%}
+
       </section>
+
     </footer>
 
-    <!-- jQuery burger script -->
 
-    <script>
-
-  $( document ).ready(function() {
-
-    console.log('hello from js');
-
-    $(".burger").click(function(){
-
-      $(".mobile-nav").toggleClass("reveal");
-
-      $(this).toggleClass("active");
-
-      console.log("burger clicked");
-
-    });
-  });
-
-    </script>
-
-<!-- This is the Lightbox JS -->
-  <script src="/plugins/lightbox2-2.11.1/dist/js/lightbox.js"></script>
-
-  <!-- Specific script to correct Lightbox positioning upon click; the "document" part of the script makes the script run ONLY AFTER the page is loaded -->
-  <script type="text/javascript">
-  $( document ).ready(function() {
-    $(".beehive-gallery a").click(function(){
-      $("body").addClass("lightbox-active");
-    });
-
-    $(".lb-close, #lightboxOverlay").click(function(){
-      $("body").removeClass("lightbox-active");
-      console.log("i saw that");
-    });
-  });
-
-</script>
-
-    <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6948663.js"></script>
-<!-- End of HubSport Embed Code -->
+{% include scripts.html %}
 
 
   </body>
