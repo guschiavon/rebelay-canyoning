@@ -86,7 +86,7 @@ page_blocks:
 </section>
 
 <!-- image with paragraph section -->
-<section class="bg-mid-gray grid frame">
+<section class="bg-mid-gray grid-noGutter frame">
   <div class="col-6_md-12-middle">
     <img src="{{page.paragraph_image}}" alt="{{page.paragraph_image_alt_text}}" />
   </div>
@@ -120,7 +120,7 @@ page_blocks:
 <!-- two image grid with captions section -->
 <section class="bg-mid-gray">
   <div class="padded-lg">
-    <div class="grid">
+    <div class="grid-noGutter">
       <div class="col-7_xs-12">
         <img src="{{page.grid_top_image}}" alt="{{ item.grid_top_image_alt_text }}" />
       </div>
@@ -128,7 +128,7 @@ page_blocks:
         Packing all the equipment and food we would need was a challenge on its own. Our technical approach clothes were as compact and light as possible, but we still had to carry wetsuits, harnesses, 240m of rope, a power drill and anchoring material, let alone the video and photo gear to document our descent. Hefting 55L packs, on average we were carrying 30kg each.
       </p>
     </div>
-    <div class="grid">
+    <div class="grid-noGutter">
       <p class="col-5_xs-12-middle caption-small editable">
         The crux of the approach was an intense traverse of a narrow and unstable ridge. Thick cloud and rain added to the ambiance, as one-by-one we edged across this sketchy section with our heavy backpacks. Progress was slow as we tried to get our bearings. A Tyrolean traverse was then needed in order to overcome a bluff section, which set us back another two hours.&nbsp;
       </p>
@@ -293,7 +293,7 @@ page_blocks:
 
 {% for author in site.authors %}
 {% if author.name == page.article_writer %}
-<section class="grid padded-lg">
+<section class="grid-noGutter padded-lg">
   <div class="col-6_sm-12 padded-lg flex-center">
     <div class="hexagon">
       <img src="{{author.profile-photo}}" alt="" />

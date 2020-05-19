@@ -1,0 +1,27 @@
+{
+  "gus": {
+    "name": "Gus Schiavon",
+    "avatar": "assets/images/author-gus-schiavon.jpg",
+    "location": "Bali, Indonesia",
+    "description": "Gus is a canyoning instructor, trainer and photographer based in Bali, Indonesia. His active participation in international expeditions and high-profile descents have produced epic accounts of canyoning and inspired many to follow their passion. Gus is the Editor of Re:belay.com",
+    "instagram": "https://instagram.com/v7gus",
+    "facebook": "https://facebook.com/gusschiavon"
+  },
+  "imin": {
+    "name": "Rindo Imin",
+    "avatar": "assets/images/author-supersmarindo.jpg",
+    "location": "Bali, Indonesia",
+    "description": "Born in wild Sumatra in the indonesian archipelago, Imin is a skilled canyoneer and talented photographer based in Bali. With extensive experience working for commercial canyoning operators, Imin is also a professional adventure guide and runs his own tour company, adventure4good.id, where a portion of profits are reverted to social programs.",
+    "instagram": "https://instagram.com/shotsincanyon",
+    "facebook": "https://facebook.com/supersmarindo"
+  },
+  "jake": {
+    "name": "Jake Huddleston",
+    "avatar": "assets/images/author-jake-huddleston.jpg",
+    "location": "Seattle, USA",
+    "description": "Jake is a canyoneer, photographer, and filmmaker based out of Seattle, Washington, USA. Also a guide and instructor, Jake’s passion for canyoning has led him to many amazing places around the world, with a primary focus on exploring new canyon routes in the Pacific Northwest and helping to develop a strong local community there.",
+    "instagram": "https://instagram.com/jake_huddleston",
+    "facebook": "https://facebook.com/jakehuddlestonmedia"
+  }
+
+}

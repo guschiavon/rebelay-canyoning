@@ -42,7 +42,7 @@ page_blocks:
 
 <!-- Canyon key facts section -->
 <section class="bg-light">
-  <div class="grid-reverse">
+  <div class="grid-noGutter-reverse">
     <div class="col-6_sm-12">
       <iframe src="{{ page.map_url }}" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
@@ -71,7 +71,7 @@ page_blocks:
 
 {% for author in site.authors %}
 {% if author.name == page.article_writer %}
-<section class="grid padded-lg">
+<section class="grid-noGutter padded-lg">
   <div class="col-6_sm-12 padded-lg flex-center">
     <div class="hexagon">
       <img data-src="{{author.profile-photo}}" alt="" class="lazyload"/>

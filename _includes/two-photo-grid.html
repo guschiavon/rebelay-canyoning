@@ -5,7 +5,7 @@
   {% if item._id == "two-photo-grid" %}
   <section class="bg-mid-gray">
     <div class="padded-lg">
-      <div class="grid">
+      <div class="grid-noGutter">
         <div class="col-7_xs-12">
           <img data-src="{{item.grid_top_image}}" alt="{{ item.grid_top_image_alt_text }}" class="lazyload">
         </div>
@@ -13,7 +13,7 @@
           {{ item.grid_top_image_caption_text }}
         </p>
       </div>
-      <div class="grid">
+      <div class="grid-noGutter">
         <p class="col-5_xs-12-middle caption-small">
           {{ item.grid_bottom_image_caption_text }}
         </p>
