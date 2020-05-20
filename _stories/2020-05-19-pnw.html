@@ -7,7 +7,7 @@ date: 2020-04-19 09:20:00
 banner_image: /assets/images/pnw/canyoning-rebelay-004-pnw-011.jpg
 article_number: 4
 article_writer: Jake Huddleston
-article_photographer: Jake Huddleston, Kevin Seffa, Haruka-James Clay Lipscomb
+article_photographer: Jake Huddleston, Kevin Steffa, Haruka-James Clay Lipscomb
 article_category: feature
 paragraph_image: assets/images/pnw/canyoning-rebelay-004-pnw-002.jpg
 paragraph_image_alt_text: 'Canyoneering in Pacific Northwest, USA'
@@ -41,7 +41,7 @@ page_blocks:
 ---
 
 <section class="bg-light">
-  <div class="padded-heavy">
+  <div class="padded-10-10">
     <div class="article-info">
       <h3>
         {{ page.date | date_to_long_string }}
@@ -106,14 +106,14 @@ page_blocks:
 <!-- two image grid with captions section -->
 <section class="bg-mid-gray padded-lg two-image-grid">
   <div class="grid-noGutter">
-    <div class="col-6_xs-12">
+    <div class="col-6_md-12">
       <div class="section-image">
         {% assign path = page.grid_top_image %}
         {% assign alt = page.grid_top_image_alt_text %}
         {% include image-tag.html %}
       </div>
     </div>
-    <div class="col-6_xs-12-middle">
+    <div class="col-6_md-12-middle">
       <div class="offset-caption-box-left bg-light">
         <div class="caption-content">
           <p> {{page.grid_top_image_alt_text}}</p>
@@ -122,23 +122,20 @@ page_blocks:
     </div>
   </div>
   <div class="grid-reverse-noGutter">
-    <div class="col-6_xs-12">
+    <div class="col-6_md-12">
       <div class="section-image">
         {% assign path = page.grid_bottom_image %}
         {% assign alt = page.grid_bottom_image_alt_text %}
         {% include image-tag.html %}
       </div>
     </div>
-    <div class="col-6_xs-12-middle">
+    <div class="col-6_md-12-middle">
       <div class="offset-caption-box-right bg-light">
         <div class="caption-content">
           <p> {{page.grid_bottom_image_alt_text}}</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="hexagon-bg">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 255"><defs><style>.a{fill:#d1d1d1;}.a,.b{opacity:0.768;}.b{fill:#ffd95c;}</style></defs><g transform="translate(-201 -5379)"><path class="a" d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(313 5443)"/><path class="b" d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(201 5508)"/><path class="a" d="M109.5,0,146,63l-36.5,63h-73L0,63,36.5,0Z" transform="translate(201 5379)"/></g></svg>
   </div>
 </section>
 
@@ -171,7 +168,7 @@ page_blocks:
       </div>
     </div>
     <div class="col-6_sm-12">
-      <div class="padded-10-8">
+      <div class="padded-10-10">
         <p class="small-image-container right editable">
           While it is possible to run canyons year round, the optimum window is June through September. More established canyons mean more options for canyoneers with different experience levels, as well as more interest from people looking to learn the sport. A few companies have begun offering annual training courses in the Portland and Seattle areas, filling a need for local training with a focus on aquatic canyoning techniques. There is even a local company called <a href="https://instagram.com/norhex" target="_blank">NÖR HEX</a> in Portland making custom canyon backpacks and rope bags. The recreational community here is small but growing rapidly, and it’s been very encouraging to see the increased interest over the past few years in the beautiful canyons we have here. The North Cascades in particular hold some of the greatest potential in the Pacific Northwest. Many canyons remain unseen or undescended due to how remote they are, as well as having a very limited window to run them each year. One such canyon is Crystal Creek, a deep and narrow slot canyon brought to our attention by our team regular, Kevin Steffa. In 2019, we made the long hike in and attempted to run the lower narrows but had to back out due to lack of time. We camped with the plan to try again the next day, but as luck would have it, the only thunderstorm of the year decided to crash our party that night.
         </p>

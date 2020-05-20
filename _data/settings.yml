@@ -1,0 +1,9 @@
+site:
+  url: 'https://rebelay.com/'
+  title: Rebelay Canyoning
+  description: 'Rebelay is a channel for camyoning stories, inspiration and content. Rebelay is #purecanyoning.'
+  preview_image: /assets/android-chrome-512x512.png
+social:
+  facebook_url:
+  instagram_url:
+  twitter_url:
